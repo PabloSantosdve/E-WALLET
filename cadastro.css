@@ -115,6 +115,7 @@ input{
 	width: 150px;
 	height: 50px;
 	border-radius: 8px;
+	border: 0.2px solid black;
 }
 
 .botao_cadastro:hover{
@@ -122,4 +123,5 @@ input{
 	color: white;
 	transition: 0.5s all;
 	border-radius: 8px;
+	border: 0.2px solid black;
 }
