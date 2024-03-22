@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*CONFIGURAÇÕES GERAIS*/
+h2 {
+    font-size: 64px;
+}
+
+
+/*SEÇAO DE QUEM SOMOS*/
+#Quem_Somos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Container que contém todo conteúdo principal (texto/botaão e imagem)*/
+#container-QuemSomos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+/*Estilizando a caixa que tem o conteúdo (lista, botão) da seção "Quem somos" */
+#container-QuemSomos .conteudo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+
+    width: 40%;
+    height: 780px;
+    padding-left: 10%; /*Coloquei um padding para "identar" a lista de elementos*/
+}
+
+/*Alinhando a lista mais ao meio*/
+.conteudo-box ul {
+    margin-top: 100px;
+}
+
+/*Estilizando cada item da lista (cada um que tem bolinha do lado)*/
+.conteudo-box ul li {
+    color: #02AB2F; /*Cor da bolinha*/
+    font-size: 40px; /*Tamanho da bolinha*/
+    margin-bottom: 30px; /*Dando um espaçamento de 30px entre cada item da lista*/
+}
+
+/*Configurando o texto dentro de cada item da lista*/
+.conteudo-box ul li p {
+    color: black;
+    font-size: 32px;
+}
+
+/*Estilização do botão dentro da Seção Quem somos!*/
+.conteudo-box button {
+    width: 70%;
+    padding: 20px;
+    margin-right: 70px; /*Devido ao padding no elemento pai, preciso usar essa margin pra forçar um alinhamento centralizado*/
+    
+    font-size: 32px;
+    
+    border: none; /*tirando a borda preta que fica em volta do botão*/
+    border-radius: 35.5px;
+    background-color: #02AB2F;
+}
+
+/*Estilizando a imagem lateral da seção!*/
+.container-QuemSomos img {
+    width: 990px;
+    height: 780px; 
+}
