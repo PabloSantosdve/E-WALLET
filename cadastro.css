@@ -4,7 +4,7 @@
 
 }
 body{
-	background-color: #233327;
+	background-image:linear-gradient(to bottom, #233327 , rgb(92, 158, 100) ) ;
 	height: 900px;
 }
 h1{
@@ -19,7 +19,7 @@ form{
 }
 fieldset{
 	margin-top: 100px;
-	width: 85%;
+	width: 90%;
 	height: 770px;
 	background-color: white;
 	border-radius: 10px;
@@ -38,9 +38,10 @@ input{
 	margin-left: 50px;
 	border-radius: 10px;
 }
+
 #sobrenome_cadastro{
 	height: 50px;
-	width: 35%;
+	width: 37%;
 	margin-top: 80px;
 	margin-bottom: 30px;
 	border-radius: 10px;
@@ -73,7 +74,7 @@ input{
 
 #senha_cadastro{
 	height: 50px;
-	width: 35%;
+	width: 37%;
 	margin-top: 30px;
 	border-radius: 10px;
 }
