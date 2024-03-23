@@ -95,6 +95,26 @@ h2 {
     font-family: Arial;
 }
 
+/* Estilizando o forms da página da home */
+#nome-sobrenome{
+    padding: 15px;
+    background-color: aqua;
+}
+
+#email-telefone{
+    padding: 15px;
+    border: 1px solid;
+    background-color: aquamarine;
+}
+
+#deixe-sua-mensagem{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 60%;
+    height: 200px;
+    background-color: bisque;
+}
+
 /* FOOTER DA PÁGINA HOME */
 footer {
 width: 100%;
