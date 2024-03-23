@@ -38,10 +38,49 @@ header button {
     background-color: #B9985E;
 }
 
+
+/* CONFIG DA MAIN */
 main {
     display: flex;
     flex-direction: column;
 }
+
+/* SEÇÃO DOS CARTÕES */
+#Cartoes-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+#Cartoes-section img {
+    width: 500px;
+    height: auto;
+}
+
+#Cartoes-section .content-box {
+    width: 60%;
+    height: 65%;
+}
+
+#Cartoes-section .content-box p {
+    width: 80%;
+    margin-top: 10px;
+
+    font-size: 22px;
+}
+
+#cartao {
+    visibility: hidden;
+
+    margin-left: 60px;
+}
+
 
 /* SEÇAO DE QUEM SOMOS */
 #Quem_Somos-section {
