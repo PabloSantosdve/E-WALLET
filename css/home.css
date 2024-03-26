@@ -136,6 +136,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 50px;
 }
 
 
@@ -192,8 +194,45 @@ main {
     background-color: #02AB2F;
 }
 
-/*Estilizando a imagem lateral da seção!*/
-.container-QuemSomos img {
-    width: 990px;
-    height: 780px; 
+/* BENEFÍCIOS SECTION */
+#Beneficios-section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    margin-top: 225px;
+}
+
+/*Conteúdo principal da seção beneficios*/
+#container-Beneficios {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 40px;
+}
+
+#container-Beneficios .conteudo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 40px;
+    
+    width: 40%;
+    height: 780px;
+    padding-right: 10%;
+}
+
+#container-Beneficios .conteudo-box ul {
+    transform: rotate(180deg);
+}
+
+#container-Beneficios .conteudo-box ul li p {
+    text-align: right;
+    transform: rotate(-180deg);
 }
