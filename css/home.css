@@ -86,15 +86,19 @@ h2 {
 /* SESSÃO DOS NOSSOS PARCEIROS */
 #nossos_parceiros{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: #02AB2F;
-    text-align: center;
     display: flex;
     align-items: center;
-    flex-direction: column;
     gap: 60px;
 }
 
+/* Ajuste da imagem dos bancos */
+#banco img{
+    width: 100%;
+}
+
+/* Ajuste da tipografia dos bancos */
 #nossos_parceiros h1{
     color: #fff;
     font-family: Arial;
@@ -110,7 +114,6 @@ h2 {
 #banco{
     width: 25%;
     height: 150px;
-    background-color: #233327;
     margin: 10px;
 }
 
@@ -135,23 +138,47 @@ h2 {
   }
 
   .planos > div{
-    background: #233327;
+    background: #fff;
     border-radius: 5px;
-    padding: 8px;
   }
 
-
+/* Ajuste dos planos */
   .item1 { 
     flex-grow:01;
     flex-shrink:1;
+    border: 1px solid #23BD4C;
+  }
+
+.item1 ul{
+display: flex;
+}
+
+  .plano1{
+    width: 100%;
+    height: 70px;
+    background-color: #23BD4C;
   }
 			
   .item2 { 
     flex-grow:1;
+    border: 1px solid #82ff05;
+  }
+
+  .plano2{
+    width: 100%;
+    height: 70px;
+    background-color: #82ff05;
   }
 			
   .item3 { 
     flex-grow:1;
+    border: 1px solid #fff500;
+  }
+
+  .plano3{
+    width: 100%;
+    height: 70px;
+    background-color: #fff500;
   }
 			
 
