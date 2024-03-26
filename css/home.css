@@ -228,10 +228,13 @@ main {
     padding-right: 10%;
 }
 
+
+/* Esse código eu estou invertendo a <ul> para que a 'bolinha' mudasse de lado, deixando tudo de ponta cabeça */
 #container-Beneficios .conteudo-box ul {
     transform: rotate(180deg);
 }
 
+/* Aqui eu arrumei o parágrafo para ~não~ ficar invertido!*/
 #container-Beneficios .conteudo-box ul li p {
     text-align: right;
     transform: rotate(-180deg);
