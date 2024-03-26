@@ -287,6 +287,10 @@ main {
     flex-direction: column;
 }
 
+#conheca_nossos_planos_section h2 {
+    margin-top: 100px;
+}
+
 .planos {
     display: flex;
     text-align: center;
@@ -294,14 +298,19 @@ main {
     width: 80%;
     height: 650px;
     padding: 15px;
-    gap: 5px;
-
+    gap: 50px;
+    margin-top: 150px;
   }
 
 .planos > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+span {
+    font-size: 30px;
+    
 }
 
 
@@ -327,7 +336,6 @@ main {
 
 .conteudo-plano ul {
     width: auto;
-
 }
 
 .conteudo-plano ul li {
@@ -335,12 +343,12 @@ main {
     flex-direction: row;
     justify-content: space-between;
     font-size: 2rem;
-    background-color: aqua;
+    margin: 25px;
 }
 
 /* Ajuste dos planos */
 .planos #basic { 
-    width: 25%;
+    width: 30%;
     height: 100%;
 }
 
@@ -351,8 +359,8 @@ main {
 
         
 .planos #plus { 
-    flex-grow:1;
-    border: 3px solid #82ff05;
+    width: 30%;
+    height: 100%;
 }
 
 .plus-bg {
@@ -361,8 +369,8 @@ main {
 }
         
 .planos #ultra { 
-    flex-grow:1;
-    border: 3px solid #fff500;
+    width: 30%;
+    height: 100%;
 }
 
 .ultra-bg {
