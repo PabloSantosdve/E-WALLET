@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --plano-basico-color:  linear-gradient( 90deg, #23BD4C, #11a037 );
+}
+
 /*CONFIGURAÇÕES GERAIS*/
 h2 {
     font-size: 64px;
@@ -294,50 +298,77 @@ main {
 
   }
 
-  .planos > div{
-    background: #fff;
-    border-radius: 5px;
-  }
-
-/* Ajuste dos planos */
-  .item1 { 
-    flex-grow:01;
-    flex-shrink:1;
-    border: 1px solid #23BD4C;
-  }
-
-.item1 ul{
-display: flex;
+.planos > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-  .plano1{
-    width: 100%;
-    height: 70px;
-    background-color: #23BD4C;
-  }
-			
-  .item2 { 
-    flex-grow:1;
-    border: 1px solid #82ff05;
-  }
 
-  .plano2{
+.plano-titulo{
     width: 100%;
     height: 70px;
-    background-color: #82ff05;
-  }
-			
-  .item3 { 
-    flex-grow:1;
-    border: 1px solid #fff500;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+}
 
-  .plano3{
-    width: 100%;
-    height: 70px;
-    background-color: #fff500;
-  }
-			
+.conteudo-plano {
+    background-color: #fff;
+    margin: 3px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo-plano ul {
+    width: auto;
+
+}
+
+.conteudo-plano ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+    background-color: aqua;
+}
+
+/* Ajuste dos planos */
+.planos #basic { 
+    width: 25%;
+    height: 100%;
+}
+
+
+.basic-bg {
+    background: linear-gradient( 90deg, #23BD4C, #11a037 );
+}
+
+        
+.planos #plus { 
+    flex-grow:1;
+    border: 3px solid #82ff05;
+}
+
+.plus-bg {
+
+    background: linear-gradient( 90deg, #82ff05, #6ddd14 );
+}
+        
+.planos #ultra { 
+    flex-grow:1;
+    border: 3px solid #fff500;
+}
+
+.ultra-bg {
+    background: linear-gradient( 90deg, #fff500, #bcb501 );
+}
+        
 
 /* SESSÃO DE QUEM SOMOS */
 #sobre_nos_section {
