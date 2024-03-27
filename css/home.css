@@ -344,6 +344,12 @@ span {
     justify-content: space-between;
     font-size: 2rem;
     margin: 25px;
+    gap: 20px;
+}
+
+/* Ajuste das imagens dos planos */
+.conteudo-plano ul li img {
+    height: 5%;
 }
 
 /* Ajuste dos planos */
@@ -376,6 +382,27 @@ span {
 .ultra-bg {
     background: linear-gradient( 90deg, #fff500, #bcb501 );
 }
+
+/* Estilizando os botões dos planos */
+.button-acessar {
+    width: 50%;
+    height: 45px;
+    font-size: 20px;
+    color: #fff;
+    border: 0px ;
+}
+
+#button-basic {
+ background: linear-gradient( 90deg, #23BD4C, #11a037 );
+}
+
+#button-plus {
+    background: linear-gradient( 90deg, #82ff05, #6ddd14 );
+}
+
+#button-ultra {
+    background: linear-gradient( 90deg, #fff500, #bcb501 );
+}
         
 
 /* SESSÃO DE QUEM SOMOS */
@@ -384,6 +411,7 @@ span {
     height: 700px;
     background-color: #23BD4C;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -391,7 +419,7 @@ span {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 80%;
+    width: 60%;
     height: 550px;
     padding: 15px;
     gap: 5px;
@@ -399,25 +427,38 @@ span {
 }
 
 .foto > div{
-    background: #233327;
     border-radius: 5px;
+    width: 50%;
     padding: 8px;
     height: 450px;
 
   }
 
+.foto img {
+    width: 100%;
+    height: 100%;
+}
 
-.foto1 { 
-    flex-grow:01;
-    flex-shrink:1;
+
+#foto1 { 
+    width: 20%;
+    position: absolute;
+    left: 680px;
+    z-index: 3;
   }
 
-  .foto2 { 
-    flex-grow:1;
+#foto2 { 
+    width: 20%;
+    position: absolute;
+    left: 400px;
+    z-index: 2;
   }
 
-  .foto3 { 
-    flex-grow:1;
+#foto3 { 
+    width: 20%;
+    position: absolute;
+    left: 950px;
+    z-index: 1;
   }
 
 
