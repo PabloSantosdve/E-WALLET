@@ -431,8 +431,8 @@ span {
     width: 50%;
     padding: 8px;
     height: 450px;
-
-  }
+    background-color: wheat;
+}
 
 .foto img {
     width: 100%;
@@ -442,6 +442,7 @@ span {
 
 #foto1 { 
     width: 20%;
+    box-shadow: 10px 10px 10px  black;
     position: absolute;
     left: 680px;
     z-index: 3;

@@ -11,3 +11,4 @@ sr.reveal(".scroll-anim", {
   rotate: {x: 0, y: 30},
   duration: 1400
 })
+
