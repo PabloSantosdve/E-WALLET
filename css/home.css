@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -247,7 +248,7 @@ main {
 /* SESSÃO DOS NOSSOS PARCEIROS */
 #nossos_parceiros{
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: #02AB2F;
     display: flex;
     align-items: center;
@@ -256,7 +257,7 @@ main {
 
 /* Ajuste da imagem dos bancos */
 #banco img{
-    width: 100%;
+    width: 90%;
 }
 
 /* Ajuste da tipografia dos bancos */
@@ -270,6 +271,8 @@ main {
     height: 200px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+   
 }
 
 #banco{
@@ -295,8 +298,8 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 80%;
-    height: 650px;
+    width: 98%;
+    height: 680px;
     padding: 15px;
     gap: 50px;
     margin-top: 150px;
@@ -306,11 +309,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px; 
+    
 }
 
 span {
-    font-size: 30px;
-    
+    font-size: 40pt;
+    font-weight: bold;
+    width: 100%;
 }
 
 
@@ -322,16 +328,21 @@ span {
     justify-content: center;
     color: #fff;
     font-size: 24px;
+    
+   
 }
 
+
 .conteudo-plano {
-    background-color: #fff;
-    margin: 3px;
+    background-color: #ffffff;
+    margin: 5px;
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
+    border-radius: 10px;
 }
 
 .conteudo-plano ul {
@@ -385,15 +396,20 @@ span {
 
 /* Estilizando os botões dos planos */
 .button-acessar {
-    width: 50%;
-    height: 45px;
-    font-size: 20px;
+    width: 100%;
+    height: 300px;
+    font-size: 40px;
+    
     color: #fff;
-    border: 0px ;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.534);
 }
 
 #button-basic {
  background: linear-gradient( 90deg, #23BD4C, #11a037 );
+
 }
 
 #button-plus {
@@ -408,30 +424,32 @@ span {
 /* SESSÃO DE QUEM SOMOS */
 #sobre_nos_section {
     width: 100%;
-    height: 700px;
+    height: 450px;
     background-color: #23BD4C;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 }
 
 .foto{
     display: flex;
     text-align: center;
-    justify-content: center;
-    width: 60%;
-    height: 550px;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
     padding: 15px;
     gap: 5px;
-    margin: 0px 150px;
+
 }
 
 .foto > div{
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
     padding: 8px;
-    height: 450px;
+    height: 400px;
     background-color: wheat;
+    margin-top: 35px;
 }
 
 .foto img {
@@ -441,25 +459,17 @@ span {
 
 
 #foto1 { 
-    width: 20%;
-    box-shadow: 10px 10px 10px  black;
-    position: absolute;
-    left: 680px;
-    z-index: 3;
+    margin-right: 40px;
   }
 
 #foto2 { 
-    width: 20%;
-    position: absolute;
-    left: 400px;
-    z-index: 2;
+  
   }
 
 #foto3 { 
-    width: 20%;
-    position: absolute;
-    left: 950px;
-    z-index: 1;
+    
+    
+
   }
 
 
@@ -495,6 +505,7 @@ span {
     height: 12%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .campo_input {
@@ -504,11 +515,12 @@ span {
     width: 45%;
     height:100%;
     font-size: 1rem;
+    border: 0.2px solid rgba(0, 0, 0, 0.466);
 }
 
 
 #deixe-sua-mensagem {
-    border: 2px solid rgba(0, 0, 0, 0.521);
+    border: 0.2px solid rgba(0, 0, 0, 0.466);
     border-radius: 10px;
     width: 90%;
     font-size: 1rem;
@@ -539,7 +551,7 @@ gap: 10px;
     width: 20%;
     height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Redes socias da footer home  */
