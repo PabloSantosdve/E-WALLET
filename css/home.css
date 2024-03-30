@@ -298,8 +298,8 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 98%;
-    height: 680px;
+    width: 100%;
+    height: 700px;
     padding: 15px;
     gap: 50px;
     margin-top: 150px;
@@ -350,12 +350,14 @@ span {
 }
 
 .conteudo-plano ul li {
+    text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 25px;
     gap: 20px;
+    font-size: 30px;
 }
 
 /* Ajuste das imagens dos planos */
@@ -397,19 +399,18 @@ span {
 /* Estilizando os botões dos planos */
 .button-acessar {
     width: 100%;
-    height: 300px;
+    height: 80px;
     font-size: 40px;
-    
+
     color: #fff;
     border: none;
     border-radius: 10px;
-    margin-top: 50px;
+    
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.534);
 }
 
 #button-basic {
  background: linear-gradient( 90deg, #23BD4C, #11a037 );
-
 }
 
 #button-plus {
@@ -420,59 +421,6 @@ span {
     background: linear-gradient( 90deg, #fff500, #bcb501 );
 }
         
-
-/* SESSÃO DE QUEM SOMOS */
-#sobre_nos_section {
-    width: 100%;
-    height: 450px;
-    background-color: #23BD4C;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.foto{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 500px;
-    padding: 15px;
-    gap: 5px;
-
-}
-
-.foto > div{
-    border-radius: 5px;
-    width: 100%;
-    padding: 8px;
-    height: 400px;
-    background-color: wheat;
-    margin-top: 35px;
-}
-
-.foto img {
-    width: 100%;
-    height: 100%;
-}
-
-
-#foto1 { 
-    margin-right: 40px;
-  }
-
-#foto2 { 
-  
-  }
-
-#foto3 { 
-    
-    
-
-  }
-
-
 /* SESSÃO DO ENTRE EM CONTATO */
 #Entre_em_contato-section {
     width: 100%;
@@ -481,6 +429,7 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 100px;
 }
 
 #Entre_em_contato-section h2 {
@@ -527,6 +476,101 @@ span {
     padding: 10px;
     resize: none;
 }
+
+/* SESSÃO DE QUEM SOMOS */
+
+#dev_home{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30pt;
+}
+#sobre_nos_section {
+    width: 100%;
+    height: 450px;
+    background-color: #23BD4C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.foto{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    padding: 15px;
+    gap: 10px;
+
+}
+
+  /*O recipiente do cartão flip - defina a largura e a altura como desejar. */
+  
+.flip-card{
+    width: 250px;
+    height: 350px;
+    margin-top: 35px;
+    border-radius: 4px; 
+    
+}
+  
+  /* Este contêiner é necessário para posicionar a frente e o verso */
+.flip-card-interna {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+    
+    border-radius: 10px;
+}
+  
+  /* Faça um giro horizontal ao mover o mouse sobre o contêiner da caixa de virar */
+.flip-card:hover .flip-card-interna {
+    transform: rotateY(180deg);
+}
+  
+  /* Posicione a frente e o verso */
+.flip-card-frente, .flip-card-costas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    border-radius: 20px;
+}
+  
+.flip-card-frente img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+ /*Estilize a parte de trás */
+.flip-card-costas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6ddd14;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+}
+.flip-card-costas h1 {
+    font-size:25px;
+    margin-bottom: 30px;
+  
+}
+.flip-card-costas p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    padding: 0px;
+}
+
+
 
 /* FOOTER DA PÁGINA HOME */
 footer {
