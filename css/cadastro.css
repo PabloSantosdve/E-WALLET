@@ -9,7 +9,7 @@ body{
 }
 h1{
 	text-align: center;
-
+	font-size: 60px;
 }
 form{
 	width: 80%;
@@ -20,13 +20,13 @@ form{
 fieldset{
 	margin-top: 100px;
 	width: 90%;
-	height: 770px;
+	height: 850px;
 	background-color: white;
 	border-radius: 10px;
-	border: 0.1px solid black;
+	border: none;
 }
 input{
-	border: 0.1px solid black;
+	border: 0.2px solid rgba(0, 0, 0, 0.466);
 	height: 40px;
 }
 #nome_cadastro{
@@ -104,6 +104,7 @@ input{
 
 #titulo_plano_escolhido{
 	margin-top: 40px;
+	margin-bottom: 40px;
 }
 #planos_cadastro{
 	display: flex;
@@ -115,7 +116,7 @@ input{
 	width: 150px;
 	height: 50px;
 	border-radius: 8px;
-	border: 0.2px solid black;
+	border: 0.2px solid rgba(0, 0, 0, 0.466);
 }
 
 .botao_cadastro:hover{
@@ -123,5 +124,5 @@ input{
 	color: white;
 	transition: 0.5s all;
 	border-radius: 8px;
-	border: 0.2px solid black;
+	border: 0.2px solid rgba(0, 0, 0, 0.466);
 }
