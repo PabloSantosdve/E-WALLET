@@ -4,8 +4,9 @@
 }
 
 body{
-    background-color: rgb(35, 51, 39);
-   
+    background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
     
 }
 
@@ -89,7 +90,7 @@ button{
 button:hover{
     background-color: rgb(53, 255, 104);
     color: rgb(0, 0, 0);
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 /*imagens*/

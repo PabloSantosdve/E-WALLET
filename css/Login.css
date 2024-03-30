@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: blueviolet;
+    
 
     display: flex;
     align-items: center;
@@ -19,7 +19,9 @@ body{
 
     margin-top: 15vh;
 
-    background-image: linear-gradient(to right,#f8f8f8, #acbb78);
+    background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 form {
