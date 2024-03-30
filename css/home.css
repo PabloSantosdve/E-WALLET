@@ -25,7 +25,7 @@ header {
     width: 100%;
     height: 80px;
 
-    background-color: #233327;
+    background-color: #23BD4C;
 }
 
 header img {
@@ -33,21 +33,27 @@ header img {
     height: 80%;
 }
 
+
 header button {
-    width: 10%;
-    height: 50%;
+    width: 150px;
+    height: 40px;
     margin-right: 30px;
 
     border: none;
     border-radius: 28px;
-    background-color: #B9985E;
+    background-color: #82ff05;
+    color: black;
 }
 header button a{
     text-decoration: none;
     color: black;
     font-size: 19px;
 }
-
+header button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
 
 /* CONFIG DA MAIN */
 main {
@@ -95,13 +101,20 @@ main {
     
     border: none;
     border-radius: 15px;
-    background-color: #B9985E;
+    background-color: #23BD4C;
+    color: white;
 
     margin-top: 20px;
 }
 #cadstro_home{
     margin-top: 20px;
 }
+#Home_main-section #conteudo-main button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
 
 
 /* SEÇÃO DOS CARTÕES */
