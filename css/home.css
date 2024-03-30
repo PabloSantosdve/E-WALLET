@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -40,6 +41,11 @@ header button {
     border: none;
     border-radius: 28px;
     background-color: #B9985E;
+}
+header button a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
 }
 
 
@@ -90,6 +96,11 @@ main {
     border: none;
     border-radius: 15px;
     background-color: #B9985E;
+
+    margin-top: 20px;
+}
+#cadstro_home{
+    margin-top: 20px;
 }
 
 
@@ -214,7 +225,7 @@ main {
 #container-Beneficios {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
 
     width: 100%;
     margin-top: 40px;
@@ -247,7 +258,7 @@ main {
 /* SESSÃO DOS NOSSOS PARCEIROS */
 #nossos_parceiros{
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: #02AB2F;
     display: flex;
     align-items: center;
@@ -256,7 +267,7 @@ main {
 
 /* Ajuste da imagem dos bancos */
 #banco img{
-    width: 100%;
+    width: 90%;
 }
 
 /* Ajuste da tipografia dos bancos */
@@ -270,6 +281,8 @@ main {
     height: 200px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+   
 }
 
 #banco{
@@ -295,8 +308,8 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 80%;
-    height: 650px;
+    width: 100%;
+    height: 700px;
     padding: 15px;
     gap: 50px;
     margin-top: 150px;
@@ -306,11 +319,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px; 
+    
 }
 
 span {
-    font-size: 30px;
-    
+    font-size: 40pt;
+    font-weight: bold;
+    width: 100%;
 }
 
 
@@ -322,16 +338,21 @@ span {
     justify-content: center;
     color: #fff;
     font-size: 24px;
+    
+   
 }
 
+
 .conteudo-plano {
-    background-color: #fff;
-    margin: 3px;
+    background-color: #ffffff;
+    margin: 5px;
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
+    border-radius: 10px;
 }
 
 .conteudo-plano ul {
@@ -339,12 +360,14 @@ span {
 }
 
 .conteudo-plano ul li {
+    text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 25px;
     gap: 20px;
+    font-size: 30px;
 }
 
 /* Ajuste das imagens dos planos */
@@ -385,11 +408,15 @@ span {
 
 /* Estilizando os botões dos planos */
 .button-acessar {
-    width: 50%;
-    height: 45px;
-    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+
     color: #fff;
-    border: 0px ;
+    border: none;
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.534);
 }
 
 #button-basic {
@@ -404,65 +431,6 @@ span {
     background: linear-gradient( 90deg, #fff500, #bcb501 );
 }
         
-
-/* SESSÃO DE QUEM SOMOS */
-#sobre_nos_section {
-    width: 100%;
-    height: 700px;
-    background-color: #23BD4C;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.foto{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 60%;
-    height: 550px;
-    padding: 15px;
-    gap: 5px;
-    margin: 0px 150px;
-}
-
-.foto > div{
-    border-radius: 5px;
-    width: 50%;
-    padding: 8px;
-    height: 450px;
-    background-color: wheat;
-}
-
-.foto img {
-    width: 100%;
-    height: 100%;
-}
-
-
-#foto1 { 
-    width: 20%;
-    box-shadow: 10px 10px 10px  black;
-    position: absolute;
-    left: 680px;
-    z-index: 3;
-  }
-
-#foto2 { 
-    width: 20%;
-    position: absolute;
-    left: 400px;
-    z-index: 2;
-  }
-
-#foto3 { 
-    width: 20%;
-    position: absolute;
-    left: 950px;
-    z-index: 1;
-  }
-
-
 /* SESSÃO DO ENTRE EM CONTATO */
 #Entre_em_contato-section {
     width: 100%;
@@ -471,6 +439,7 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 100px;
 }
 
 #Entre_em_contato-section h2 {
@@ -495,6 +464,7 @@ span {
     height: 12%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .campo_input {
@@ -504,17 +474,117 @@ span {
     width: 45%;
     height:100%;
     font-size: 1rem;
+    border: 0.2px solid rgba(0, 0, 0, 0.466);
 }
 
 
 #deixe-sua-mensagem {
-    border: 2px solid rgba(0, 0, 0, 0.521);
+    border: 0.2px solid rgba(0, 0, 0, 0.466);
     border-radius: 10px;
     width: 90%;
     font-size: 1rem;
     padding: 10px;
     resize: none;
 }
+
+/* SESSÃO DE QUEM SOMOS */
+
+#dev_home{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30pt;
+}
+#sobre_nos_section {
+    width: 100%;
+    height: 450px;
+    background-color: #23BD4C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.foto{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    padding: 15px;
+    gap: 10px;
+
+}
+
+  /*O recipiente do cartão flip - defina a largura e a altura como desejar. */
+  
+.flip-card{
+    width: 250px;
+    height: 350px;
+    margin-top: 35px;
+    border-radius: 20px; 
+    
+}
+  
+  /* Este contêiner é necessário para posicionar a frente e o verso */
+.flip-card-interna {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+    
+    border-radius: 20px;
+
+    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.363);
+}
+  
+  /* Faça um giro horizontal ao mover o mouse sobre o contêiner da caixa de virar */
+.flip-card:hover .flip-card-interna {
+    transform: rotateY(180deg);
+}
+  
+  /* Posicione a frente e o verso */
+.flip-card-frente, .flip-card-costas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    border-radius: 20px;
+    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.363);
+}
+  
+.flip-card-frente img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+ /*Estilize a parte de trás */
+.flip-card-costas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #02AB2F;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.363) ;
+}
+.flip-card-costas h1 {
+    font-size:25px;
+    margin-bottom: 30px;
+  
+}
+.flip-card-costas p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    padding: 0px;
+}
+
+
 
 /* FOOTER DA PÁGINA HOME */
 footer {

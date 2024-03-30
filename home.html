@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="components/images/imagens-gerais/favicon_e_wallet.png" type="image/x-icon">
     
-    <title>E-wallet</title>
+    <title>E-WALLET</title>
 </head>
 <body>
 
     <header>
         <img src="components/images/home-images/logo.png" alt="logo e-wallet">
-        <button>Iniciar sessão</button>
+        
+        <button><a href="Login.html" rel="next">Iniciar sessão</a></button>
     </header>
 
     <main>
@@ -22,7 +24,7 @@
                     <h1>
                         Seu CPF é o seu passaporte para um mundo financeiro unificado e sem complicações.
                     </h1>
-                    <button>CADASTR-SE</button>
+                    <a href="cadastro.html"><button>CADASTRE-SE</button></a>
                 </div>
         </section>
 
@@ -52,7 +54,7 @@
                         </li>
                     </ul>
 
-                    <button>Venha ser membro</button>
+                    <a href="#"><button id="membro">Venha ser membro</button></a>
                 </div>
                 <img src="components/images/home-images/QuemSomos-celular.png" alt="imagem ilustrativa lateral de um celular exibindo nosso site">
             </div>
@@ -120,7 +122,11 @@
                             </li>
                             <li>
                                 <img src="components/images/home-images/check.png" alt="liberado">
-                                <p>Pagamento bancário</p>
+                                <p>Visualização Boletos</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/close.png" alt="bloqueado">
+                                <p>Carteira Digital</p>
                             </li>
                             <li>
                                 <img src="components/images/home-images/close.png" alt="bloqueado">
@@ -130,14 +136,7 @@
                                 <img src="components/images/home-images/close.png" alt="bloqueado">
                                 <p>Pagamento bancário</p>
                             </li>
-                            <li>
-                                <img src="components/images/home-images/close.png" alt="bloqueado">
-                                <p>Pagamento bancário</p>
-                            </li>
-                            <li>
-                                <img src="components/images/home-images/close.png" alt="bloqueado">
-                                <p>Pagamento bancário</p>
-                            </li>
+                           
 
                         </ul>
                         <button class="button-acessar" id="button-basic">ACESSAR</button>
@@ -173,10 +172,7 @@
                                 <img src="components/images/home-images/close.png" alt="bloqueado">
                                 <p>Pagamento bancário</p>
                             </li>
-                            <li>
-                                <img src="components/images/home-images/close.png" alt="bloqueado">
-                                <p>Pagamento bancário</p>
-                            </li>
+                           
 
 
                         </ul>
@@ -190,7 +186,7 @@
                     <div class="plano-titulo"><h3>PLANO ULTRA</h3></div>
                     <div class="conteudo-plano">
 
-                        <span>R$ 40.90</span>
+                       <span>R$ 40.99</span>
 
                         <ul>
 
@@ -214,10 +210,7 @@
                                 <img src="components/images/home-images/check.png" alt="liberado">
                                 <p>Pagamento bancário</p>
                             </li>
-                            <li>
-                                <img src="components/images/home-images/check.png" alt="liberado">
-                                <p>Pagamento bancário</p>
-                            </li>
+                           
 
                         </ul>
                         <button  class="button-acessar" id="button-ultra">ACESSAR</button>
@@ -226,20 +219,6 @@
             </div>
                         
         </section>
-
-
-        <section id="sobre_nos_section">
-
-            <div class="foto">
-
-                <div id="foto1"><img src="" alt=""></div>
-                <div id="foto2"><img src="" alt=""></div>
-                <div id="foto3"><img src="" alt=""></div>
-
-            </div>
-
-        </section>
-
 
         <section id="Entre_em_contato-section">
 
@@ -250,6 +229,7 @@
                 <div class="caixa-item-form">
 
                     <input type="text" class ="campo_input" name="nome" placeholder="Nome">
+
                     <input type="text" class ="campo_input" name="nome" placeholder="Sobrenome">
 
                 </div>
@@ -257,6 +237,7 @@
                 <div class="caixa-item-form">
 
                         <input type="text" class ="campo_input" placeholder="Email">
+
                         <input type="text" class ="campo_input" placeholder="Telefone">
                         
                 </div>
@@ -268,13 +249,110 @@
 
         </section>
 
+
+        <h2 id="dev_home">DESENVOLVEDORES</h2>
+        <section id="sobre_nos_section">
+        
+            <div class="foto">
+
+               
+                    <a href="https://github.com" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_pablo.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                    DEV HTML, CSS E JAVSCRIPT
+                                    <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <a href="" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_larissa.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/mathmorgado" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_matheus.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT
+                                        <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jesmgl" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_jessica.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/JuanPina01" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+            </div>
+
+        </section>
+
         <footer id="footer-home">
 
              <div class="redes-socias-home">
 
-                 <div id="sociais"> <img src="components/images/home-images/icons8-logotipo-do-linkedin-50.png" alt="Linkedin"  height="100%"> </div>
-                 <div id="sociais"> <img src="components/images/home-images/icons8-instagram-50.png" alt="Instagram"  height="100%"> </div>
-                 <div id="sociais"> <img src="components/images/home-images/icons8-facebook-50.png" alt="Facebook"  height="100%"> </div>
+                 <div id="sociais"><a href=""> <img src="components/images/home-images/instagram.png" alt="Instagram"  height="100%"></a> </div>
+                <div id="sociais"> <a href=""><img src="components/images/home-images/facebook.png" alt="Facebook"  height="100%"> </a></div>
+                 <div id="sociais"> <a href=""><img src="components/images/home-images/twitter.png" alt="Twitter"  height="100%"></a> </div>
 
              </div>
 

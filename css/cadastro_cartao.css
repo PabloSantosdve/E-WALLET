@@ -9,6 +9,10 @@ body{
     
 }
 
+section h1{
+    font-size: 50px;
+}
+
 #cadastro_cartao{
     margin: auto;
     height: 450px;
