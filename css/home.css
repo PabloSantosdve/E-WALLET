@@ -42,6 +42,11 @@ header button {
     border-radius: 28px;
     background-color: #B9985E;
 }
+header button a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
 
 
 /* CONFIG DA MAIN */
@@ -91,6 +96,11 @@ main {
     border: none;
     border-radius: 15px;
     background-color: #B9985E;
+
+    margin-top: 20px;
+}
+#cadstro_home{
+    margin-top: 20px;
 }
 
 
@@ -595,7 +605,7 @@ gap: 10px;
     width: 20%;
     height: 70px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* Redes socias da footer home  */
