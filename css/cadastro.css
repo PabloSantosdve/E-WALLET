@@ -4,7 +4,9 @@
 
 }
 body{
-	background-image:linear-gradient(to bottom, #233327 , rgb(92, 158, 100) ) ;
+	background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	height: 900px;
 }
 h1{
@@ -21,7 +23,7 @@ fieldset{
 	margin-top: 100px;
 	width: 90%;
 	height: 850px;
-	background-color: white;
+	background-color: #d9d9d9;
 	border-radius: 10px;
 	border: none;
 }
@@ -30,76 +32,99 @@ input{
 	height: 40px;
 }
 #nome_cadastro{
-	height: 50px;
-	width: 30%;
-	margin-top: 80px;
-	margin-bottom: 30px;
-	margin-right: 150px;
+	height: 40px;
+
+	margin-top: 40px;
 	margin-left: 50px;
+	
 	border-radius: 10px;
+	text-align: center;
+
+	font-size: 1rem;
 }
 
 #sobrenome_cadastro{
-	height: 50px;
+	height: 40px;
 	width: 37%;
-	margin-top: 80px;
-	margin-bottom: 30px;
+
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
 	border-radius: 10px;
 	
+	font-size: 1rem;
+	text-align: center;
 }
 #email_cadastro{
-	width: 84%;
-	height: 50px;
+	width: 80%;
+	height: 40px;
+
 	margin-left: 50px;
 	border-radius: 10px;
+
+	font-size: 1rem;
+	text-align: center;
 }
 
 #cpf_cadastro{
 	width: 84%;
-	height: 50px;
+	height: 40px;
+
 	margin-left: 50px;
-	margin-top: 30px;
+	margin-top: 10px;
+
 	border-radius: 10px;
+	text-align: center;
+	font-size: 1rem;
 }
 
 #usuario_cadastro{
-	height: 50px;
+	height: 40px;
 	width: 30%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
 	margin-right: 150px;
 	margin-left: 50px;
+
 	border-radius: 10px;
+	text-align: center;
+	font-size: 1rem;
 }
 
 #senha_cadastro{
-	height: 50px;
+	height: 40px;
 	width: 37%;
-	margin-top: 30px;
+	margin-top: 10px;
 	border-radius: 10px;
+	text-align: center;
 }
 
 #cep_cadastro{
 	width: 40%;
-	height: 50px;
-	margin-top: 20px;
+	height: 40px;
+	margin-top: 10px;
 	margin-left: 50px;
 	border-radius: 10px;
+	text-align: center;
 }
 
 #endereco_cadastro{
 	width: 60%;
-	height: 50px;
-	margin-left: 50px;
-	margin-top: 30px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 10px;
 	border-radius: 10px;
+	text-align: center;
 }
 
 #numero_cadastro{
 	width: 10%;
-	height: 50px;
+	height: 40px;
 	margin-left: 20px;
-	border-radius: 10px;
+	border-radius: 20px;
+	text-align: center;
 }
 
 #titulo_plano_escolhido{
@@ -114,15 +139,15 @@ input{
 
 .botao_cadastro{
 	width: 150px;
-	height: 50px;
-	border-radius: 8px;
+	height: 40px;
+	border-radius: 20px;
 	border: 0.2px solid rgba(0, 0, 0, 0.466);
 }
 
 .botao_cadastro:hover{
-	background-color: #233327;
+	background-color: rgb(2, 171, 47);
 	color: white;
 	transition: 0.5s all;
-	border-radius: 8px;
+	border-radius: 20px;
 	border: 0.2px solid rgba(0, 0, 0, 0.466);
 }

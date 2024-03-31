@@ -65,6 +65,8 @@ form h1{
     border: 0.2px solid rgba(0, 0, 0, 0.363);
     background-color: #e3e4e200;
 
+    cursor: pointer;
+
 }
 
 #botao-login:hover{

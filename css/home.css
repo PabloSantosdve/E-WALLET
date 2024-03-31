@@ -28,12 +28,6 @@ header {
     background-color: #23BD4C;
 }
 
-header img {
-    width: auto;
-    height: 80%;
-}
-
-
 header button {
     width: 150px;
     height: 40px;
@@ -47,12 +41,26 @@ header button {
 header button a{
     text-decoration: none;
     color: black;
-    font-size: 19px;
+    font-size: 20px;
 }
 header button:hover{
     background-color: black;
     color: white;
     transition: all 0.5s;
+}
+#logo{
+    width: 350px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+   
+}
+#logo img{
+    width: 50%;
+    height: 95%;
 }
 
 /* CONFIG DA MAIN */
@@ -190,7 +198,23 @@ main {
     height: 780px;
     padding-left: 10%; /*Coloquei um padding para "identar" a lista de elementos*/
 }
-
+/*eSTILIZANDO OS BOTÕES DAS SECTIONS*/
+#membro{
+    width: 370px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+#Quem_Somos-section button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+#Beneficios-section button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
 /*Alinhando a lista mais ao meio*/
 .conteudo-box ul {
     margin-top: 100px;
