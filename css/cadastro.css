@@ -7,22 +7,26 @@ body{
 	background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
     background-repeat: no-repeat;
     background-attachment: fixed;
-	height: 900px;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
 }
 h1{
 	text-align: center;
 	font-size: 60px;
 }
 form{
-	width: 80%;
-	height: 600px;
+	width: 90%;
+	max-width: 90%;
+	height: auto;
 	border-radius: 10px;
 	
 }
 fieldset{
 	margin-top: 100px;
 	width: 90%;
-	height: 850px;
+	height: auto;
 	background-color: #d9d9d9;
 	border-radius: 10px;
 	border: none;
@@ -38,14 +42,14 @@ input{
 	margin-left: 50px;
 	
 	border-radius: 10px;
-	text-align: center;
-
+	
+	font-weight: bold;
 	font-size: 1rem;
 }
 
 #sobrenome_cadastro{
 	height: 40px;
-	width: 37%;
+	
 
 	margin-left: 50px;
 	margin-top: 20px;
@@ -54,92 +58,110 @@ input{
 	border-radius: 10px;
 	
 	font-size: 1rem;
-	text-align: center;
+	font-weight: bold;
 }
 #email_cadastro{
-	width: 80%;
+	
 	height: 40px;
 
 	margin-left: 50px;
 	border-radius: 10px;
 
 	font-size: 1rem;
-	text-align: center;
+	
 }
 
 #cpf_cadastro{
-	width: 84%;
+	width: 50%;
 	height: 40px;
 
 	margin-left: 50px;
-	margin-top: 10px;
-
 	border-radius: 10px;
-	text-align: center;
+	margin-top: 15px;
+
 	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+#cep_cadastro{
+	height: 40px;
+
+	margin-left: 50px;
+	border-radius: 10px;
+	margin-top: 15px;
+
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+#endereco_cadastro{
+	height: 40px;
+
+	margin-left: 50px;
+	border-radius: 10px;
+	margin-top: 15px;
+
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+#numero_cadastro{
+	height: 40px;
+
+	margin-left: 50px;
+	border-radius: 10px;
+	margin-top: 15px;
+
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
 }
 
 #usuario_cadastro{
 	height: 40px;
-	width: 30%;
+	
 
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 150px;
-	margin-left: 50px;
+	margin-left: 250px;
 
 	border-radius: 10px;
 	text-align: center;
 	font-size: 1rem;
+	font-weight: bold;
 }
 
 #senha_cadastro{
 	height: 40px;
-	width: 37%;
-	margin-top: 10px;
-	border-radius: 10px;
-	text-align: center;
-}
 
-#cep_cadastro{
-	width: 40%;
-	height: 40px;
-	margin-top: 10px;
-	margin-left: 50px;
+	margin-left: 250px;
 	border-radius: 10px;
-	text-align: center;
-}
+	margin-top: 15px;
 
-#endereco_cadastro{
-	width: 60%;
-	height: 40px;
-	margin-left: 20px;
-	margin-top: 10px;
-	border-radius: 10px;
+	font-size: 1rem;
 	text-align: center;
-}
-
-#numero_cadastro{
-	width: 10%;
-	height: 40px;
-	margin-left: 20px;
-	border-radius: 20px;
-	text-align: center;
+	font-weight: bold;
 }
 
 #titulo_plano_escolhido{
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
+	
 }
 #planos_cadastro{
 	display: flex;
 	flex-direction: row;
 	margin-top: 10px;
+
 }
 
 .botao_cadastro{
-	width: 150px;
-	height: 40px;
+	width: 250px;
+	height: 80px;
 	border-radius: 20px;
 	border: 0.2px solid rgba(0, 0, 0, 0.466);
 }
@@ -150,4 +172,9 @@ input{
 	transition: 0.5s all;
 	border-radius: 20px;
 	border: 0.2px solid rgba(0, 0, 0, 0.466);
+}
+
+h2{
+	text-align: center;
+	margin: 20px;
 }
