@@ -4,124 +4,177 @@
 
 }
 body{
-	background-image:linear-gradient(to bottom, #233327 , rgb(92, 158, 100) ) ;
-	height: 900px;
+	background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
 }
 h1{
 	text-align: center;
-
+	font-size: 60px;
 }
 form{
-	width: 80%;
-	height: 600px;
+	width: 90%;
+	max-width: 90%;
+	height: auto;
 	border-radius: 10px;
 	
 }
 fieldset{
 	margin-top: 100px;
 	width: 90%;
-	height: 770px;
-	background-color: white;
+	height: auto;
+	background-color: #d9d9d9;
 	border-radius: 10px;
-	border: 0.1px solid black;
+	border: none;
 }
 input{
-	border: 0.1px solid black;
+	border: 0.2px solid rgba(0, 0, 0, 0.466);
 	height: 40px;
 }
 #nome_cadastro{
-	height: 50px;
-	width: 30%;
-	margin-top: 80px;
-	margin-bottom: 30px;
-	margin-right: 150px;
+	height: 40px;
+
+	margin-top: 40px;
 	margin-left: 50px;
+	
 	border-radius: 10px;
+	
+	font-weight: bold;
+	font-size: 1rem;
 }
 
 #sobrenome_cadastro{
-	height: 50px;
-	width: 37%;
-	margin-top: 80px;
-	margin-bottom: 30px;
+	height: 40px;
+	
+
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
 	border-radius: 10px;
 	
+	font-size: 1rem;
+	font-weight: bold;
 }
 #email_cadastro{
-	width: 84%;
-	height: 50px;
+	
+	height: 40px;
+
 	margin-left: 50px;
 	border-radius: 10px;
+
+	font-size: 1rem;
+	
 }
 
 #cpf_cadastro{
-	width: 84%;
-	height: 50px;
-	margin-left: 50px;
-	margin-top: 30px;
-	border-radius: 10px;
-}
+	width: 50%;
+	height: 40px;
 
-#usuario_cadastro{
-	height: 50px;
-	width: 30%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-right: 150px;
 	margin-left: 50px;
 	border-radius: 10px;
-}
+	margin-top: 15px;
 
-#senha_cadastro{
-	height: 50px;
-	width: 37%;
-	margin-top: 30px;
-	border-radius: 10px;
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
 }
 
 #cep_cadastro{
-	width: 40%;
-	height: 50px;
-	margin-top: 20px;
+	height: 40px;
+
 	margin-left: 50px;
 	border-radius: 10px;
+	margin-top: 15px;
+
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
 }
 
 #endereco_cadastro{
-	width: 60%;
-	height: 50px;
+	height: 40px;
+
 	margin-left: 50px;
-	margin-top: 30px;
 	border-radius: 10px;
+	margin-top: 15px;
+
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
 }
 
 #numero_cadastro{
-	width: 10%;
-	height: 50px;
-	margin-left: 20px;
+	height: 40px;
+
+	margin-left: 50px;
 	border-radius: 10px;
+	margin-top: 15px;
+
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+#usuario_cadastro{
+	height: 40px;
+	
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 150px;
+	margin-left: 250px;
+
+	border-radius: 10px;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+#senha_cadastro{
+	height: 40px;
+
+	margin-left: 250px;
+	border-radius: 10px;
+	margin-top: 15px;
+
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
 }
 
 #titulo_plano_escolhido{
 	margin-top: 40px;
+	margin-bottom: 30px;
+	
 }
 #planos_cadastro{
 	display: flex;
 	flex-direction: row;
 	margin-top: 10px;
+
 }
 
 .botao_cadastro{
-	width: 150px;
-	height: 50px;
-	border-radius: 8px;
-	border: 0.2px solid black;
+	width: 250px;
+	height: 80px;
+	border-radius: 20px;
+	border: 0.2px solid rgba(0, 0, 0, 0.466);
 }
 
 .botao_cadastro:hover{
-	background-color: #233327;
+	background-color: rgb(2, 171, 47);
 	color: white;
 	transition: 0.5s all;
-	border-radius: 8px;
-	border: 0.2px solid black;
+	border-radius: 20px;
+	border: 0.2px solid rgba(0, 0, 0, 0.466);
+}
+
+h2{
+	text-align: center;
+	margin: 20px;
 }

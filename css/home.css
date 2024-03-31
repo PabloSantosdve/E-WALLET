@@ -2,25 +2,178 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+:root {
+    --plano-basico-color:  linear-gradient( 90deg, #23BD4C, #11a037 );
 }
-
 
 /*CONFIGURAÇÕES GERAIS*/
 h2 {
     font-size: 64px;
 }
 
+/* HEADER */
 
-/*SEÇAO DE QUEM SOMOS*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+
+    background-color: #23BD4C;
+}
+
+header button {
+    width: 150px;
+    height: 40px;
+    margin-right: 30px;
+
+    border: none;
+    border-radius: 28px;
+    background-color: #82ff05;
+    color: black;
+}
+header button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+header button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+#logo{
+    width: 350px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+   
+}
+#logo img{
+    width: 50%;
+    height: 95%;
+}
+
+/* CONFIG DA MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SEÇÃO PRINCIPAL HOME */
+#Home_main-section {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: 80vh;
+    padding-left: 15px;
+
+    background-image: url(../components/images/home-images/home-main-img.png);
+    background-size: cover;
+}
+
+/* Caixa que contém todo o conteúdo da primeira section principal (h1 e botão) */
+#Home_main-section #conteudo-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    width: 40%;
+    height: 45%;
+    padding-left: 15px;
+}
+
+#Home_main-section #conteudo-main h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#Home_main-section #conteudo-main button{
+    width: 50%;
+    padding: 15px 0;
+
+    font-size: 1.5rem;
+    
+    border: none;
+    border-radius: 15px;
+    background-color: #23BD4C;
+    color: white;
+
+    margin-top: 20px;
+}
+#cadstro_home{
+    margin-top: 20px;
+}
+#Home_main-section #conteudo-main button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+
+/* SEÇÃO DOS CARTÕES */
+#Cartoes-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+
+    background-color: #02ab2f9c;
+}
+
+#Cartoes-section img {
+    width: 500px;
+    height: auto;
+}
+
+#Cartoes-section .content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 60%;
+    height: 65%;
+}
+
+#Cartoes-section .content-box p {
+    width: 80%;
+    margin-top: 10px;
+
+    font-size: 22px;
+}
+
+#cartao {
+    visibility: hidden;
+
+    margin-left: 60px;
+}
+
+
+/* SEÇAO DE QUEM SOMOS */
 #Quem_Somos-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 50px;
 }
 
 
@@ -45,7 +198,23 @@ h2 {
     height: 780px;
     padding-left: 10%; /*Coloquei um padding para "identar" a lista de elementos*/
 }
-
+/*eSTILIZANDO OS BOTÕES DAS SECTIONS*/
+#membro{
+    width: 370px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+#Quem_Somos-section button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+#Beneficios-section button:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
 /*Alinhando a lista mais ao meio*/
 .conteudo-box ul {
     margin-top: 100px;
@@ -77,8 +246,413 @@ h2 {
     background-color: #02AB2F;
 }
 
-/*Estilizando a imagem lateral da seção!*/
-.container-QuemSomos img {
-    width: 990px;
-    height: 780px; 
+/* BENEFÍCIOS SECTION */
+#Beneficios-section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    margin-top: 225px;
+}
+
+/*Conteúdo principal da seção beneficios*/
+#container-Beneficios {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    width: 100%;
+    margin-top: 40px;
+}
+
+#container-Beneficios .conteudo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 40px;
+    
+    width: 40%;
+    height: 780px;
+    padding-right: 10%;
+}
+
+
+/* Esse código eu estou invertendo a <ul> para que a 'bolinha' mudasse de lado, deixando tudo de ponta cabeça */
+#container-Beneficios .conteudo-box ul {
+    transform: rotate(180deg);
+}
+
+/* Aqui eu arrumei o parágrafo para ~não~ ficar invertido!*/
+#container-Beneficios .conteudo-box ul li p {
+    text-align: right;
+    transform: rotate(-180deg);
+}
+
+/* SESSÃO DOS NOSSOS PARCEIROS */
+#nossos_parceiros{
+    width: 100%;
+    height: 300px;
+    background-color: #02AB2F;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Ajuste da imagem dos bancos */
+#banco img{
+    width: 90%;
+}
+
+/* Ajuste da tipografia dos bancos */
+#nossos_parceiros h1{
+    color: #fff;
+    font-family: Arial;
+}
+
+.bancos-parceiros{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+#banco{
+    width: 25%;
+    height: 150px;
+    margin: 10px;
+}
+
+/* SESSÃO DE CONHEÇA NOSSOS PLANOS */
+#conheca_nossos_planos_section{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conheca_nossos_planos_section h2 {
+    margin-top: 100px;
+}
+
+.planos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    padding: 15px;
+    gap: 50px;
+    margin-top: 150px;
+  }
+
+.planos > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px; 
+    
+}
+
+span {
+    font-size: 40pt;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.plano-titulo{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    
+   
+}
+
+
+.conteudo-plano {
+    background-color: #ffffff;
+    margin: 5px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: 10px;
+}
+
+.conteudo-plano ul {
+    width: auto;
+}
+
+.conteudo-plano ul li {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin: 25px;
+    gap: 20px;
+    font-size: 30px;
+}
+
+/* Ajuste das imagens dos planos */
+.conteudo-plano ul li img {
+    height: 5%;
+}
+
+/* Ajuste dos planos */
+.planos #basic { 
+    width: 30%;
+    height: 100%;
+}
+
+
+.basic-bg {
+    background: linear-gradient( 90deg, #23BD4C, #11a037 );
+}
+
+        
+.planos #plus { 
+    width: 30%;
+    height: 100%;
+}
+
+.plus-bg {
+
+    background: linear-gradient( 90deg, #82ff05, #6ddd14 );
+}
+        
+.planos #ultra { 
+    width: 30%;
+    height: 100%;
+}
+
+.ultra-bg {
+    background: linear-gradient( 90deg, #fff500, #bcb501 );
+}
+
+/* Estilizando os botões dos planos */
+.button-acessar {
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.534);
+}
+
+#button-basic {
+ background: linear-gradient( 90deg, #23BD4C, #11a037 );
+}
+
+#button-plus {
+    background: linear-gradient( 90deg, #82ff05, #6ddd14 );
+}
+
+#button-ultra {
+    background: linear-gradient( 90deg, #fff500, #bcb501 );
+}
+
+/* SESSÃO DO ENTRE EM CONTATO */
+#Entre_em_contato-section {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#Entre_em_contato-section h2 {
+    font-size: 64px;
+    font-weight: 300;
+    margin-top: 2%;
+}
+
+/* Estilizando o forms da página da home */
+#formulario {
+    width: 90%;
+    height:600px ;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.caixa-item-form {
+    width: 90%;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.campo_input {
+    padding: 15px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.44);
+    width: 45%;
+    height:100%;
+    font-size: 1rem;
+    border: 0.2px solid rgba(0, 0, 0, 0.466);
+    color: black;
+}
+
+
+#deixe-sua-mensagem {
+    border: 0.2px solid rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+    width: 90%;
+    font-size: 1rem;
+    padding: 10px;
+    resize: none;
+}
+
+/* SESSÃO DE QUEM SOMOS */
+
+#dev_home{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30pt;
+}
+#sobre_nos_section {
+    width: 100%;
+    height: 450px;
+    background-color: #23BD4C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.foto{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    padding: 15px;
+    gap: 10px;
+
+}
+
+  /*O recipiente do cartão flip - defina a largura e a altura como desejar. */
+  
+.flip-card{
+    width: 250px;
+    height: 350px;
+    margin-top: 35px;
+    border-radius: 20px; 
+    
+}
+  
+  /* Este contêiner é necessário para posicionar a frente e o verso */
+.flip-card-interna {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+    
+    border-radius: 20px;
+
+    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.363);
+}
+  
+  /* Faça um giro horizontal ao mover o mouse sobre o contêiner da caixa de virar */
+.flip-card:hover .flip-card-interna {
+    transform: rotateY(180deg);
+}
+  
+  /* Posicione a frente e o verso */
+.flip-card-frente, .flip-card-costas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    border-radius: 20px;
+    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.363);
+}
+  
+.flip-card-frente img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+ /*Estilize a parte de trás */
+.flip-card-costas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #02AB2F;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.363) ;
+}
+.flip-card-costas h1 {
+    font-size:25px;
+    margin-bottom: 30px;
+  
+}
+.flip-card-costas p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    padding: 0px;
+}
+
+
+
+/* FOOTER DA PÁGINA HOME */
+footer {
+width: 100%;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+
+/* Estilizando a footer home */
+#footer-home {
+    background-color: #233327;
+    color: #fff;
+    font-family: Arial;
+}
+
+/* Colocando as redes socias na footer */
+.redes-socias-home {
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Redes socias da footer home  */
+#sociais {
+    width: 30%;
+    height: 70px;
 }

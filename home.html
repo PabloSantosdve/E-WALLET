@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="components/images/imagens-gerais/favicon_e_wallet.png" type="image/x-icon">
     
-    <title>E-wallet</title>
+    <title>E-WALLET</title>
 </head>
 <body>
+
+    <header>
+       
+            <div id="logo">
+                <img src="components/images/home-images/logo.png" alt="logo e-wallet">
+                <h1>E-WALLET</h1>
+            </div>
+
+            <a href="Login.html" rel="next"><button>INICIAR SESSÃO</button></a>
+    </header>
+
     <main>
+
+        <section id="Home_main-section">
+                <div id="conteudo-main">
+                    <h1>
+                        Seu CPF é o seu passaporte para um mundo financeiro unificado e sem complicações.
+                    </h1>
+                    <a href="cadastro.html"><button>CADASTRE-SE</button></a>
+                </div>
+        </section>
+
+        <section id="Cartoes-section">
+            <img id="cartao" src="components/images/home-images/cartao-green.png" alt="Cartão black ilustrativo">
+            <div class="content-box scroll-anim">
+                <h2>Cartões digitais unificados!</h2>
+                <p>
+                    Com o E-Wallet, você pode dizer adeus às dores de cabeça de gerenciar múltiplas contas de cartão de crédito. Nosso painel unificado permite que você acompanhe suas faturas, visualize seu histórico de gastos e até mesmo antecipe pagamentos - tudo em um só lugar!
+                </p>
+            </div>
+        </section>
 
         <section id="Quem_Somos-section">
             <h2>Quem somos</h2>
@@ -20,18 +51,321 @@
                             <p>Sistemas de unificação de cartões, onde você poderá monitarar sua vida financeira</p>
                         </li>
                         <li>
-                            <p>Liberdade de tempo, pois, você não precisará ficar logando em vários bancos</p>
+                            <p>Liberdade de tempo, pois você não precisará ficar logando em vários bancos</p>
                         </li>
                         <li>
                             <p>Facilitador de pagamento, aqui você pode pagar todas as suas conta em um boleto</p>
                         </li>
                     </ul>
 
-                    <button>Venha ser membro</button>
+                    <a href="cadastro.html" rel="next"><button id="membro">VENHA SER MEMBRO</button></a>
                 </div>
                 <img src="components/images/home-images/QuemSomos-celular.png" alt="imagem ilustrativa lateral de um celular exibindo nosso site">
             </div>
         </section>
+
+        <section id="Beneficios-section">
+            <h2>Nossos benefícios</h2>
+            <div id="container-Beneficios">
+                <div class="conteudo-box">
+                    <!-- Essa parte está invertida. No css tive que inverter a ul para que a 'bolinha' da lista mudasse de lado, então essa parte está de baixo para cima-->
+                    <ul>
+                        <li>
+                            <p>Possibilidade de pagamento unico</p>
+                        </li>
+                        <li>
+                            <p>Controle na palma da sua mão</p>
+                        </li>
+                        <li>
+                            <p>Facilidade no seu dia a dia</p>
+                        </li>
+                        <li>
+                            <p>Organização das despesas</p>
+                        </li>
+                    </ul>
+
+                    <a href="cadastro.html" rel="next"><button id="membro">VENHA SER MEMBRO</button></a>
+                </div>
+                <img src="components/images/home-images/beneficios-notebook.png" alt="imagem ilustrativa lateral de um celular exibindo nosso site">
+            </div>
+        </section>
+
+        <section id="nossos_parceiros">
+
+            <div class="bancos-parceiros">
+                
+                <div id="banco"><a href=""><img src="components/images/home-images/banco-pan-removebg-preview.png" alt="banco Pan"></div></a>
+                <div id="banco"><a href=""><img src="components/images/home-images/c6-bank-removebg-preview.png" alt="banco C6"></div></a>
+                <div id="banco"><a href=""><img src="components/images/home-images/grupobmg_logo-removebg-preview.png" alt="banco BMG"></div></a>
+                <div id="banco"><a href=""><img src="components/images/home-images/santander-removebg-preview.png" alt="banco Santander"></div></a>
+                <div id="banco"><a href=""><img src="components/images/home-images/next-removebg-preview.png" alt="banco Next"></div></a>
+                <div id="banco"><a href=""><img src="components/images/home-images/nu-removebg-preview.png" alt="banco Nubank"></div></a>
+                <div id="banco"><a href=""><img src="components/images/home-images/png-transparent-banco-do-brasil-hd-logo-removebg-preview.png" alt="banco do Brasil"></div></a>
+                
+            </div>
+
+        </section>
+
+        <section id="conheca_nossos_planos_section">
+            <h2>Conheça nossos planos</h2>
+
+
+            <div class="planos">
+   
+                <div id="basic" class="basic-bg">
+                    <div class="plano-titulo"><h3>PLANO BASIC</h3></div>
+                    <div class="conteudo-plano">
+
+                        <span>R$ 17,90</span>
+
+                        <ul>
+
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Visualização Boletos</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/close.png" alt="bloqueado">
+                                <p>Carteira Digital</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/close.png" alt="bloqueado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/close.png" alt="bloqueado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                           
+
+                        </ul>
+                        <button class="button-acessar" id="button-basic">ACESSAR</button>
+
+                    </div>
+
+                </div>
+
+                <div id="plus" class="plus-bg">
+                    <div class="plano-titulo"><h3>PLANO PLUS</h3></div>
+                    <div class="conteudo-plano">
+
+                        <span>R$ 24,90</span>
+                    
+                        <ul>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/close.png" alt="bloqueado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                           
+
+
+                        </ul>
+                        <button  class="button-acessar" id="button-plus">ACESSAR</button>
+
+                   </div>
+
+                </div>
+
+                <div id="ultra" class="ultra-bg">
+                    <div class="plano-titulo"><h3>PLANO ULTRA</h3></div>
+                    <div class="conteudo-plano">
+
+                       <span>R$ 40,99</span>
+
+                        <ul>
+
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                            <li>
+                                <img src="components/images/home-images/check.png" alt="liberado">
+                                <p>Pagamento bancário</p>
+                            </li>
+                           
+
+                        </ul>
+                        <button  class="button-acessar" id="button-ultra">ACESSAR</button>
+
+                   </div>
+            </div>
+                        
+        </section>
+
+        <section id="Entre_em_contato-section">
+
+            <h2>Entre em contato</h2>
+
+            <form id="formulario">
+
+                <div class="caixa-item-form">
+
+                    <input type="text" class ="campo_input" name="nome" placeholder="Nome">
+
+                    <input type="text" class ="campo_input" name="nome" placeholder="Sobrenome">
+
+                </div>
+
+                <div class="caixa-item-form">
+
+                        <input type="text" class ="campo_input" placeholder="Email">
+
+                        <input type="text" class ="campo_input" placeholder="Telefone">
+                        
+                </div>
+
+                <textarea id="deixe-sua-mensagem" cols="30" rows="18" name="message" placeholder="Deixe sua mensagem..."></textarea>
+    
+
+            </form>
+
+        </section>
+
+
+        <h2 id="dev_home">DESENVOLVEDORES</h2>
+        <section id="sobre_nos_section">
+        
+            <div class="foto">
+
+               
+                    <a href="https://github.com" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_pablo.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                    DEV HTML, CSS E JAVSCRIPT
+                                    <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <a href="" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_larissa.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/mathmorgado" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_matheus.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT
+                                        <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jesmgl" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/imagem_jessica.jpeg" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/JuanPina01" rel="next" target="_blank">
+                        <div class="flip-card"> 
+                            <div class="flip-card-interna">
+                                <div class="flip-card-frente">
+                                    <img src="components/images/imagem_dos_participantes/" alt="">
+                                </div>
+                                <div class="flip-card-costas">
+                                    <h1>DESENVOLVEDOR FRONT-END</h1>
+                                    <p>
+                                        DEV HTML, CSS E JAVSCRIPT <br /> <br />
+                                        DESIGNER DO SITE
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+            </div>
+
+        </section>
+
+        <footer id="footer-home">
+
+             <div class="redes-socias-home">
+
+                 <div id="sociais"><a href=""> <img src="components/images/home-images/instagram.png" alt="Instagram"  height="100%"></a> </div>
+                <div id="sociais"> <a href=""><img src="components/images/home-images/facebook.png" alt="Facebook"  height="100%"> </a></div>
+                 <div id="sociais"> <a href=""><img src="components/images/home-images/twitter.png" alt="Twitter"  height="100%"></a> </div>
+
+             </div>
+
+            <p>© 2023 E-Wallet. All rights reserved.</p>
+
+        </footer>
     </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 </html>
