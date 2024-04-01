@@ -41,12 +41,12 @@ main {
 	background-color: #f9f9f9;
 }
 
-.caixa-texto {
-	text-align: center;
-}
-
 button {
 	cursor: pointer;
+}
+
+.caixa-texto {
+	text-align: center;
 }
 
 /*CAIXA DA IMAGEM - LADO ESQUERDO*/
