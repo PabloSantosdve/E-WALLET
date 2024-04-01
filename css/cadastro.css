@@ -45,6 +45,10 @@ main {
 	text-align: center;
 }
 
+button {
+	cursor: pointer;
+}
+
 /*CAIXA DA IMAGEM - LADO ESQUERDO*/
 main article {
 	width: 50%;
