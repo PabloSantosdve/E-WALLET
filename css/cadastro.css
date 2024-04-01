@@ -142,6 +142,7 @@ aside form input:focus {
 	padding: 2px;
 	outline: none;
 	border-bottom: 2px solid #26B71A;
+	background-color: #f9f9f9;
 }
 
 aside form button {
@@ -217,4 +218,9 @@ aside .container-btn .btn-autenticacao img {
 /*Espaçamento à direita do texto para centralizar*/
 aside .container-btn .btn-autenticacao span{
 	margin-right: 10%;
+}
+
+
+@media screen and (max-width: 1024px) {
+	
 }
