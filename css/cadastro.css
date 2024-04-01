@@ -1,180 +1,213 @@
 *{
-	margin: auto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
-
 }
+
+html {
+	/*A cada 1rem serão considerados 10px*/
+	font-size: 62.5%;
+}
+
 body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+
+	/*16px (Explicação no seletor "html" linha 8)*/
+	font-size: 1.6rem;
+
 	background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
     background-repeat: no-repeat;
     background-attachment: fixed;
-	height: auto;
-
-	display: flex;
-	flex-direction: column;
-}
-h1{
-	text-align: center;
-	font-size: 60px;
-}
-form{
-	width: 90%;
-	max-width: 90%;
-	height: auto;
-	border-radius: 10px;
-	
-}
-fieldset{
-	margin-top: 100px;
-	width: 90%;
-	height: auto;
-	background-color: #d9d9d9;
-	border-radius: 10px;
-	border: none;
-}
-input{
-	border: 0.2px solid rgba(0, 0, 0, 0.466);
-	height: 40px;
-}
-#nome_cadastro{
-	height: 40px;
-
-	margin-top: 40px;
-	margin-left: 50px;
-	
-	border-radius: 10px;
-	
-	font-weight: bold;
-	font-size: 1rem;
 }
 
-#sobrenome_cadastro{
-	height: 40px;
-	
 
-	margin-left: 50px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	
-	border-radius: 10px;
-	
-	font-size: 1rem;
-	font-weight: bold;
-}
-#email_cadastro{
-	
-	height: 40px;
+/* Configurando a Caixa principal! */
+main {
+	position: relative;
 
-	margin-left: 50px;
-	border-radius: 10px;
-
-	font-size: 1rem;
-	
-}
-
-#cpf_cadastro{
-	width: 50%;
-	height: 40px;
-
-	margin-left: 50px;
-	border-radius: 10px;
-	margin-top: 15px;
-
-	font-size: 1rem;
-	text-align: center;
-	font-weight: bold;
-}
-
-#cep_cadastro{
-	height: 40px;
-
-	margin-left: 50px;
-	border-radius: 10px;
-	margin-top: 15px;
-
-	font-size: 1rem;
-	text-align: center;
-	font-weight: bold;
-}
-
-#endereco_cadastro{
-	height: 40px;
-
-	margin-left: 50px;
-	border-radius: 10px;
-	margin-top: 15px;
-
-	font-size: 1rem;
-	text-align: center;
-	font-weight: bold;
-}
-
-#numero_cadastro{
-	height: 40px;
-
-	margin-left: 50px;
-	border-radius: 10px;
-	margin-top: 15px;
-
-	font-size: 1rem;
-	text-align: center;
-	font-weight: bold;
-}
-
-#usuario_cadastro{
-	height: 40px;
-	
-
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 150px;
-	margin-left: 250px;
-
-	border-radius: 10px;
-	text-align: center;
-	font-size: 1rem;
-	font-weight: bold;
-}
-
-#senha_cadastro{
-	height: 40px;
-
-	margin-left: 250px;
-	border-radius: 10px;
-	margin-top: 15px;
-
-	font-size: 1rem;
-	text-align: center;
-	font-weight: bold;
-}
-
-#titulo_plano_escolhido{
-	margin-top: 40px;
-	margin-bottom: 30px;
-	
-}
-#planos_cadastro{
 	display: flex;
 	flex-direction: row;
-	margin-top: 10px;
 
-}
+	width: 80%;
+	height: 75vh;
 
-.botao_cadastro{
-	width: 250px;
-	height: 80px;
+	box-shadow: 10px 1px 20px 5px rgba(0, 0, 0, 0.253);
 	border-radius: 20px;
-	border: 0.2px solid rgba(0, 0, 0, 0.466);
+	background-color: #f9f9f9;
 }
 
-.botao_cadastro:hover{
-	background-color: rgb(2, 171, 47);
-	color: white;
-	transition: 0.5s all;
-	border-radius: 20px;
-	border: 0.2px solid rgba(0, 0, 0, 0.466);
-}
-
-h2{
+.caixa-texto {
 	text-align: center;
-	margin: 20px;
+}
+
+/*CAIXA DA IMAGEM - LADO ESQUERDO*/
+main article {
+	width: 50%;
+	
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../components/images/LoginCadastro-images/login-bg.jpg);
+}
+
+main article #conteudo-article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15%;
+
+	width: 100%;
+	height: 100%;
+	
+	color: #f9f9f9;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	backdrop-filter: brightness(40%);
+}
+
+#conteudo-article .logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 8%;
+}
+
+#conteudo-article .logo img {
+	width: 122px;
+	height: 73px;
+}
+
+#conteudo-article .logo p {
+	/* 32px (explicação linha 8) */
+	font-size: 4.6rem;
+}
+
+#conteudo-article .caixa-texto {
+	margin-bottom: 30%;
+}
+
+#conteudo-article h1 {
+	font-size: 4.4rem;
+}
+
+#conteudo-article h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+/*CAIXA DE CADASTRO - LADO DIREITO*/
+main aside {
+	width: 50%;
+	padding: 4%;
+}
+
+/* CONFIG. TEXTO INICIAL*/
+aside .caixa-texto h2 {
+	font-size: 3.2rem;
+}
+
+aside .caixa-texto h3 {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+/* CONFIG. FORMULÁRIO*/
+aside form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+aside form label {
+	margin-top: 8px;
+	font-size: 1.6rem;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+aside form input {
+	border: none;
+	border-bottom: 2px solid #26B71A;
+}
+
+aside form button {
+	width: 60%;
+	margin: 20px auto;
+	padding: 10px;
+
+	font-size: 1.8rem;
+	color: white;
+
+	border: none;
+	border-radius: 10px;
+	background-color: #26B71A;
+}
+
+/* CONFIG. DIVISÓRIA */
+aside #linha-divisoria {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: auto;
+
+	margin: 20px 0px;
+}
+
+aside #linha-divisoria hr {
+	width: 100%;
+	height: 1px;
+}
+
+/* Colocando o texto em cima da linha horizontal e "apagando" ela com o 'background-color' */
+aside #linha-divisoria span{
+	position: absolute;
+	padding: 0px 15px; 
+	background-color: #f9f9f9;
+}
+
+/* CONFIG. BOTÕES DE ACESSO GOOGLE/FACEBOOK */
+aside .container-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 5%;
+}
+
+/* Configurações de todo o botão*/
+aside .container-btn .btn-autenticacao{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 40%;
+	height: 55px;
+	padding: 10px;
+
+	border: none;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Tamanho da logo do botão de autenticação (google/facebook)*/
+aside .container-btn .btn-autenticacao img {
+	width: 32px;
+}
+
+/*Espaçamento à direita do texto para centralizar*/
+aside .container-btn .btn-autenticacao span{
+	margin-right: 10%;
 }
