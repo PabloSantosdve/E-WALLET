@@ -34,7 +34,7 @@ main {
 	flex-direction: row;
 
 	width: 80%;
-	height: 75vh;
+	height: 80vh;
 
 	box-shadow: 10px 1px 20px 5px rgba(0, 0, 0, 0.253);
 	border-radius: 20px;
@@ -131,9 +131,12 @@ aside form label {
 	font-size: 1.6rem;
 	color: rgba(0, 0, 0, 0.6);
 }
-
-aside form input {
+/*Configurando a barra de input na forma normal e na forma quando o usuário vai digitar (:focus)*/
+aside form input, 
+aside form input:focus {
 	border: none;
+	padding: 2px;
+	outline: none;
 	border-bottom: 2px solid #26B71A;
 }
 
