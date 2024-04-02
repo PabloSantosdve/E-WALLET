@@ -17,6 +17,9 @@ h2 {
 /* HEADER */
 
 header {
+    position: fixed;
+    z-index: 1;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;

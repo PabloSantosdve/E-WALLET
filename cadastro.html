@@ -10,68 +10,56 @@
 </head>
 <body>
 	<main>
-		<form action="">
-			<fieldset>
-				<h1>CADASTRO</h1>
-			
-				<input type="text" name="nome" id="nome_cadastro" placeholder="Nome" size="100" maxlength="40">
-				
-		
-				<input type="text" name="sobrenome" id="sobrenome_cadastro" placeholder="Sobrenome" size="100" maxlength="50">
-
-				<br />
-
-				
-				<input type="email" name="E-mail" id="email_cadastro" placeholder="E-mail" size="100">
-				
-				<br />
-
-				
-				<input type="number" name="" id="cpf_cadastro" placeholder="CPF">
-
-				<br />
-
-				<input type="text" name="" id="cep_cadastro" placeholder="C.E.P" size="40" maxlength="30">
-
-				<br />
-
-				
-				<input type="text" name="endereço" id="endereco_cadastro" placeholder="Endereço" size="70" maxlength="50">
-
-				
-				<input type="text" name="" id="numero_cadastro" placeholder="Numero" size="10" maxlength="10">
-
-				<br />
-
-				<h2>CRIE O USUARIO E SENHA:</h2>
-				<input type="text" name="usuario" id="usuario_cadastro" placeholder="Nome de usuario" size="50" maxlength="20">
-
-				
-				<input type="password" name="senha" id="senha_cadastro" placeholder="Senha" size="50" maxlength="30">
-
-				<br />
-
-				<h1 id="titulo_plano_escolhido">PLANO ESCOLHIDO</h1>
-
-				<div id="planos_cadastro">
-					
-					<button class="botao_cadastro" onmouseover="show_planos('basico')" onmouseout="hidden_show()">
-						<div><h2>Plano Basic</h2></div>
-					</button>
-		
-					<button class="botao_cadastro" onmouseover="show_planos('plus')" onmouseout="hidden_show()">
-						<div><h2>Plano Plus</h2></div>
-					</button>
-		
-					<button class="botao_cadastro" onmouseover="show_planos('ultra')" onmouseout="hidden_show()">
-						<div><h2>Plano Ultra</h2></div>
-					</button>
+		<article>
+			<div id="conteudo-article">
+				<div class="logo">
+					<img src="components/images/LoginCadastro-images/logo-ewallet.png" alt="Logo da E-Wallet">
+					<p>E-Wallet</p>
 				</div>
+				<div class="caixa-texto">
+					<h1>Seja muito bem vindo!</h1>
+					<h2>Para ter acesso a todas as nossas feramentas<br>mantenha-se conectado!</h2>
+				</div>
+			</div>
+		</article>
+		<aside>
+			<div class="caixa-texto">
+				<h2>Comece já!</h2>
+				<h3>Já tem uma conta? <a href="login.html">Logar</a></h3>
+			</div>
+			<form>
+				<label>User</label>
+				<input type="text">
 
-				</fieldset>
-			</fieldset>
-		</form>
-		
+				<label>email</label>
+				<input type="email">
+
+				<label>CPF</label>
+				<input type="text">
+
+				<label>Senha</label>
+				<input type="password">
+
+				<button>Cadastrar</button>
+			</form>
+
+			<div id="linha-divisoria">
+				<hr>
+				<span>Ou cadastre-se com</span>
+			</div>
+
+			<div class="container-btn">
+				<button class="btn-autenticacao">
+					<img src="components/images/LoginCadastro-images/google-logo.png" alt="Logo da Google">
+					<span>Google</span>
+				</button>
+
+				<button class="btn-autenticacao">
+					<img src="components/images/LoginCadastro-images/facebook-logo.png" alt="Logo do Facebook">
+					<span>Facebook</span>
+				</button>
+			</div>
+		</aside>
 	</main>
 </body>
 </html>
