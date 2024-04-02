@@ -28,16 +28,25 @@
 				<h3>Ainda não tem uma conta? <a href="cadastro.html">Registre-se</a> </h3>
 			</div>
 			<form>
-				<label>User</label>
-				<input type="text">
+				<div class="campo-input">
+					<input type="text" required placeholder="">
+					<label>User</label>
+				</div>
+				
+				<div class="campo-input">
+					<input type="password" required placeholder="">
+					<label>Senha</label>
+				</div>
 
-				<label>Senha</label>
-				<input type="password">
-
-                <label id="lembre">Lembre-se de mim</label>
-                <input type="checkbox" name="" id="caixa_lembre">
-
-                <a href="#" id="link_senha">Esqueceu a senha ?</a>
+				<div id="container-checkbox-esqueceuSenha">
+					<div class="campo-checkbox">
+						<input type="checkbox" name="" id="caixa_lembre">
+						<label id="lembre">Lembre-se de mim</label>
+					</div>
+	
+					<a href="#" id="link_senha">Esqueceu a senha ?</a>
+				</div>
+				
 
 				<button>Login</button>
 			</form>

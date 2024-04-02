@@ -130,31 +130,93 @@ aside .caixa-texto h3 {
 
 /* CONFIG. FORMULÁRIO*/
 aside form {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	justify-content: space-around;
 
+	width: 100%;
+	height: 55%;
 	margin-top: 5%;
 }
 
-aside form label {
-	margin-top: 8px;
-	font-size: 16px;
+aside form .campo-input {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+aside form .campo-input label {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	display: flex;
+	align-items: center;
+
+	height: 100%;
+	font-size: 14px;
 	color: rgba(0, 0, 0, 0.6);
+	
+	pointer-events: none;
+	transition: transform 300ms ease, top 300ms ease;
 }
 /*Configurando a barra de input na forma normal e na forma quando o usuário vai digitar (:focus)*/
-aside form input, 
-aside form input:focus {
+aside form .campo-input input {
+	width: 100%;
+	height: 30px;
+	padding: 2px 0;
+
 	border: none;
-	padding: 2px;
+	border-bottom: 2px solid #27b71a;
+	
+	transition: border 300ms ease;
+	background-color: transparent;
+}
+
+aside form .campo-input input:focus {
 	outline: none;
-	border-bottom: 2px solid #26B71A;
-	background-color: #f9f9f9;
+	box-shadow: 0 1px 1px 0 #27b71a46;
+}
+
+aside form .campo-input input:focus + label,
+aside form .campo-input input:not(:placeholder-shown) + label {
+    transform: translateY(-18px);
+    font-size: 13px;
+    color: #27b71a;
+}
+
+aside form .campo-checkbox {
+	display: flex;
+	flex-direction: row;
+
+	width: auto;
+	height: auto;
+	padding: 4px;
+}
+
+aside form .campo-checkbox label {
+	position: relative;
+}
+
+aside form .campo-checkbox input {
+	width: auto;
+}
+
+#container-checkbox-esqueceuSenha {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+
 }
 
 aside form button {
 	width: 60%;
-	margin: 20px auto;
+	margin: 0 auto 10px auto;
 	padding: 10px;
 
 	font-size: 1.8rem;
@@ -230,17 +292,13 @@ aside .container-btn .btn-autenticacao span{
 aside #link_senha{
     text-decoration: none;
     text-align: right;
-    margin-top: -24px;
     color: blue;
 }
-aside #caixa_lembre{
-    margin-right: 430px;
-    margin-top: -25.5px;
-}
+
 aside  #lembre{
     margin-left: 20px;
-
 }
+
 /* CONFIGURAÇÃO PARA TELAS COM BASE NA LARGURA DELAS */
 @media screen and (max-width: 1173px) {
 	html {
@@ -320,7 +378,5 @@ aside  #lembre{
 
 /* CONFIGURANDO TELAS COM BASE NA LARGURA E ALTURA DELAS */
 @media screen and (max-width: 610px) and (min-height: 720px) {
-	main {
-		background-color: #26B71A;
-	}
+	/* Tela específica para uma proporção diferente de tela */
 }
