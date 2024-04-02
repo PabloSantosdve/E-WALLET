@@ -90,7 +90,7 @@ main article #conteudo-article {
 }
 
 #conteudo-article .logo p {
-	/* 32px (explicação linha 8) */
+	/* 46px (explicação linha 8) */
 	font-size: 4.6rem;
 }
 
@@ -128,11 +128,13 @@ aside form {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+
+	margin-top: 5%;
 }
 
 aside form label {
 	margin-top: 8px;
-	font-size: 1.6rem;
+	font-size: 16px;
 	color: rgba(0, 0, 0, 0.6);
 }
 /*Configurando a barra de input na forma normal e na forma quando o usuário vai digitar (:focus)*/
@@ -221,6 +223,86 @@ aside .container-btn .btn-autenticacao span{
 }
 
 
+/* CONFIGURAÇÃO PARA TELAS COM BASE NA LARGURA DELAS */
+@media screen and (max-width: 1173px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 53%;
+	}
+}
+
 @media screen and (max-width: 1024px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 48%;
+	}
+
+	aside form label {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 844px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 48%;
+	}
+
+	#conteudo-article h1 {
+		font-size: 3.6rem;
+	}
 	
+	#conteudo-article h2 {
+		font-size: 1.7rem;
+		font-weight: 400;
+	}
+
+	aside .container-btn {
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+	}
+
+	aside .container-btn .btn-autenticacao{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 47%;
+	}
+
+	main {
+		width: 95%;
+	}
+}
+
+
+
+/* CONFIGURAÇÃO PARA TELAS COM BASE NA ALTURA DELAS */
+@media screen and (max-height: 725px) {
+	main {
+		height: 90vh;
+	}
+}
+
+@media screen and (max-height: 645px) {
+	main aside{
+		padding-top: 18px;
+	}
+
+	aside form {
+		gap: 4px;
+	
+		margin-top: 5%;
+	}
+}
+
+/* CONFIGURANDO TELAS COM BASE NA LARGURA E ALTURA DELAS */
+@media screen and (max-width: 610px) and (min-height: 720px) {
+	main {
+		background-color: #26B71A;
+	}
 }
