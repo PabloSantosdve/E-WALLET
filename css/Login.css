@@ -1,134 +1,319 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
-#login-container{
-    background-color: rgb(9, 135, 135);
-    width: 80%;
-    height: 500px;
-    background-color: #d9d9d9;
+
+html {
+	/*A cada 1rem serão considerados 10px*/
+	font-size: 62.5%;
 }
 
 body{
-    
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+	height: 100vh;
 
-    margin-top: 15vh;
+	/*16px (Explicação no seletor "html" linha 8)*/
+	font-size: 1.6rem;
 
-    background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
+	background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-}
-form {
-  
-  width: 50%;
-  margin-left: 470px;
-  height: 400px;
-  
-
-}
-form h1{
-    text-align: center;
 }
 
 
-#login-usuario{
-   margin-bottom: 40px;
-   border: 0.2px solid rgba(0, 0, 0, 0.363);
-   margin-top: 10px;
-   height: 40px;
+/* Configurando a Caixa principal! */
+main {
+	position: relative;
 
-   border-radius: 30.5px;
+	display: flex;
+	flex-direction: row;
+
+	width: 80%;
+	height: 80vh;
+
+	box-shadow: 10px 1px 20px 5px rgba(0, 0, 0, 0.253);
+	border-radius: 20px;
+	background-color: #f9f9f9;
 }
 
-#login-senha{
-    margin-bottom: 2px;
-    border: 0.2px solid rgba(0, 0, 0, 0.363);
-    margin-top: 10px;
-    height: 40px;
- 
-    border-radius: 30.5px;
+button {
+	cursor: pointer;
 }
 
-#botao-login{
-    width: 140px;
-    height: 40px;
-    margin-right: 95.5px;
-    border-radius: 30.5px;
-    margin-top: 30px;
-
-    border: 0.2px solid rgba(0, 0, 0, 0.363);
-    background-color: #e3e4e200;
-
-    cursor: pointer;
-
+.caixa-texto {
+	text-align: center;
 }
 
-#botao-login:hover{
-    background-color: #1a3321d3;
-    color: white;
-    transition: all 0.3s;
-    border: none;
+/*CAIXA DA IMAGEM - LADO ESQUERDO*/
+main article {
+	width: 50%;
+	
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../components/images/LoginCadastro-images/login-bg.jpg);
 }
 
+main article #conteudo-article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15%;
 
-#cadastro-login{
-    
-    width: 140px;
-    height: 40px;
-    border-radius: 30.5px;
-
-    border: 0.2px solid rgba(0, 0, 0, 0.363);
-    background-color: #e3e4e200;
-}
-#cadastro-login:hover{
-    background-color: #1a3321d3;
-    color: white;
-    transition: all 0.3s;
-    border: none;
-}
-#retangulo-login{
-    position: absolute;
-
-    width: 32%;
-    height: 500px;
-
-    z-index: 1; 
-
+	width: 100%;
+	height: 100%;
+	
+	color: #f9f9f9;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	backdrop-filter: brightness(40%);
 }
 
-#retangulo-login img{
-    width: 90%;
-    height: 100%;
+#conteudo-article .logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 8%;
+}
+
+#conteudo-article .logo img {
+	width: 122px;
+	height: 73px;
+}
+
+#conteudo-article .logo p {
+	/* 46px (explicação linha 8) */
+	font-size: 4.6rem;
+}
+
+#conteudo-article .caixa-texto {
+	margin-bottom: 30%;
+}
+
+#conteudo-article h1 {
+	font-size: 4.4rem;
+}
+
+#conteudo-article h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+/*CAIXA DE CADASTRO - LADO DIREITO*/
+main aside {
+	width: 50%;
+	padding: 4%;
+}
+
+/* CONFIG. TEXTO INICIAL*/
+aside .caixa-texto h2 {
+	font-size: 3.2rem;
+    text-align: left;
+}
+
+aside .caixa-texto h3 {
+	font-size: 1.4rem;
+	font-weight: 500;
+    text-align: left;
+}
+
+/* CONFIG. FORMULÁRIO*/
+aside form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	margin-top: 5%;
+}
+
+aside form label {
+	margin-top: 8px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.6);
+}
+/*Configurando a barra de input na forma normal e na forma quando o usuário vai digitar (:focus)*/
+aside form input, 
+aside form input:focus {
+	border: none;
+	padding: 2px;
+	outline: none;
+	border-bottom: 2px solid #26B71A;
+	background-color: #f9f9f9;
+}
+
+aside form button {
+	width: 60%;
+	margin: 20px auto;
+	padding: 10px;
+
+	font-size: 1.8rem;
+	color: white;
+
+	border: none;
+	border-radius: 10px;
+	background-color: #26B71A;
+}
+
+/* CONFIG. DIVISÓRIA */
+aside #linha-divisoria {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: auto;
+
+	margin: 20px 0px;
+}
+
+aside #linha-divisoria hr {
+	width: 100%;
+	height: 1px;
+}
+
+/* Colocando o texto em cima da linha horizontal e "apagando" ela com o 'background-color' */
+aside #linha-divisoria span{
+	position: absolute;
+	padding: 0px 15px; 
+	background-color: #f9f9f9;
+}
+
+/* CONFIG. BOTÕES DE ACESSO GOOGLE/FACEBOOK */
+aside .container-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 5%;
+}
+
+/* Configurações de todo o botão*/
+aside .container-btn .btn-autenticacao{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 40%;
+	height: 55px;
+	padding: 10px;
+
+	border: none;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Tamanho da logo do botão de autenticação (google/facebook)*/
+aside .container-btn .btn-autenticacao img {
+	width: 32px;
+}
+
+/*Espaçamento à direita do texto para centralizar*/
+aside .container-btn .btn-autenticacao span{
+	margin-right: 10%;
+}
+
+aside #link_senha{
+    text-decoration: none;
+    text-align: right;
    
 }
-
-#logo-login{
+aside #caixa_lembre{
+    background-color: aqua;
     
-    position: absolute;
-
-    width: 20%;
-    z-index:2;
-
-    top: 180px;
-    text-align: center;
-    color: white;
-    left: 170px;
+}
+/* CONFIGURAÇÃO PARA TELAS COM BASE NA LARGURA DELAS */
+@media screen and (max-width: 1173px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 53%;
+	}
 }
 
-#logo-login img{
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 1024px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 48%;
+	}
 
-
+	aside form label {
+		font-size: 15px;
+	}
 }
-a{  
-    
-    text-decoration: none;
-    color: black;
+
+@media screen and (max-width: 844px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 48%;
+	}
+
+	#conteudo-article h1 {
+		font-size: 3.6rem;
+	}
+	
+	#conteudo-article h2 {
+		font-size: 1.7rem;
+		font-weight: 400;
+	}
+
+	aside .container-btn {
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+	}
+
+	aside .container-btn .btn-autenticacao{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		/*A cada 1rem serão considerados 10px*/
+		font-size: 47%;
+	}
+
+	main {
+		width: 95%;
+	}
+}
+
+
+
+/* CONFIGURAÇÃO PARA TELAS COM BASE NA ALTURA DELAS */
+@media screen and (max-height: 725px) {
+	main {
+		height: 90vh;
+	}
+}
+
+@media screen and (max-height: 645px) {
+	main aside{
+		padding-top: 18px;
+	}
+
+	aside form {
+		gap: 4px;
+	
+		margin-top: 5%;
+	}
+}
+
+/* CONFIGURANDO TELAS COM BASE NA LARGURA E ALTURA DELAS */
+@media screen and (max-width: 610px) and (min-height: 720px) {
+	main {
+		background-color: #26B71A;
+	}
 }
