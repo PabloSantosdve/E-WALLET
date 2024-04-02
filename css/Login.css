@@ -78,6 +78,7 @@ main article #conteudo-article {
 	backdrop-filter: brightness(40%);
 }
 
+
 #conteudo-article .logo {
 	display: flex;
 	flex-direction: row;
@@ -93,6 +94,7 @@ main article #conteudo-article {
 #conteudo-article .logo p {
 	/* 46px (explicação linha 8) */
 	font-size: 4.6rem;
+    font-weight: bold;
 }
 
 #conteudo-article .caixa-texto {
@@ -228,11 +230,16 @@ aside .container-btn .btn-autenticacao span{
 aside #link_senha{
     text-decoration: none;
     text-align: right;
-   
+    margin-top: -24px;
+    color: blue;
 }
 aside #caixa_lembre{
-    background-color: aqua;
-    
+    margin-right: 430px;
+    margin-top: -25.5px;
+}
+aside  #lembre{
+    margin-left: 20px;
+
 }
 /* CONFIGURAÇÃO PARA TELAS COM BASE NA LARGURA DELAS */
 @media screen and (max-width: 1173px) {
