@@ -308,7 +308,7 @@ main {
 }
 
 /* Ajuste da imagem dos bancos */
-#banco img{
+.banco img{
     width: 90%;
 }
 
@@ -327,7 +327,7 @@ main {
    
 }
 
-#banco{
+.banco{
     width: 25%;
     height: 150px;
     margin: 10px;
