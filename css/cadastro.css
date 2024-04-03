@@ -17,7 +17,7 @@ body{
 
 	height: 100vh;
 
-	/*16px (Explicação no seletor "html" linha 8)*/
+	/*16px padrão (Explicação no seletor "html" linha 8)*/
 	font-size: 1.6rem;
 
 	background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
@@ -205,7 +205,6 @@ aside #linha-divisoria {
 
 	width: 100%;
 	height: auto;
-
 	margin: 20px 0px;
 }
 
@@ -262,14 +261,12 @@ aside .container-btn .btn-autenticacao span{
 /* CONFIGURAÇÃO PARA TELAS COM BASE NA LARGURA DELAS */
 @media screen and (max-width: 1173px) {
 	html {
-		/*A cada 1rem serão considerados 10px*/
 		font-size: 53%;
 	}
 }
 
 @media screen and (max-width: 1024px) {
 	html {
-		/*A cada 1rem serão considerados 10px*/
 		font-size: 48%;
 	}
 
@@ -280,7 +277,6 @@ aside .container-btn .btn-autenticacao span{
 
 @media screen and (max-width: 844px) {
 	html {
-		/*A cada 1rem serão considerados 10px*/
 		font-size: 48%;
 	}
 
