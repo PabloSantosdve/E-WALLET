@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cliente.css" type="text/css">
+    <script src="cliente.js" type="text/javascript"></script>
+    <title>E-Wallet</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a id="logo" href=""></a>
+            <div id="perfil">
+                <a id="nome" href="">Bem vinda, Leticia!</a>
+                <a href=""><img src="components/imagens/pagina-MeusCartoes/perfil.png" alt="foto de uma menina"></a>
+            </div>
+        </nav>
+
+        
+            <h1 id="titulo">Meus cartões</h1>
+
+        <div id="header">
+
+            <div id="cartão_princ">
+                <img id="principal" src="components/imagens/pagina-MeusCartoes/cartoes/black-cartao.jpg" alt="cartão preto">
+                <p id="Fatura">Fatura atual</p>
+                <p id="fatura1">R$ 800,00</p>
+                <button>Pagar</button>
+            </div>
+
+            <div id="escolha">
+                <img class="cartoes" id="cartao-black" src="components/imagens/pagina-MeusCartoes/cartoes/black-cartao.jpg" alt="cartão preto" onclick="moverCartao('cartao-black')">
+                <img class="cartoes" id="cartao-santander" src="components/imagens/pagina-MeusCartoes/cartoes/santander-cartao.png" alt="cartão santander" onclick="moverCartao('cartao-santander')">
+                <img class="cartoes" id="cartao-monzo" src="components/imagens/pagina-MeusCartoes/cartoes/monzo-cartao.png" alt="cartão rosa" onclick="moverCartao('cartao-monzo')">
+                <img class="cartoes" id="cartao-white" src="components/imagens/pagina-MeusCartoes/cartoes/white-cartao.png" alt="cartão branco" onclick="moverCartao('cartao-white')">
+            </div>
+        </div>
+
+        <img id="limite" src="components/imagens/pagina-MeusCartoes/limite.png" alt="">
+    </header>
+
+    <section id="movimentaçao">
+        <h1>Movimentações</h1>
+        <input type="pesquisa" id="txtBusca" placeholder="Buscar...">
+        <div id="background">
+            <h6>25 de março</h6>
+            <div  class="contorno">
+                <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+                <div class="lançamentos" >
+                    <p class="compras">Compra no debito</p>
+                    <p class="valor">-R$ 9,90</p>
+                    <p class="estabele">pag*Cleitinhosalgados</p>
+                </div>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+            <div class="pix"><img id="pix1" src="components/imagens/pagina-MeusCartoes/pix.png" alt=""></div>
+            <div class="lançamentos" >
+                <p class="compras">Compra no debito</p>
+                <p class="valor">-R$ 9,90</p>
+                <p class="estabele">pag*Cleitinhosalgados</p>
+            </div>
+
+        </div>
+
+
+
+        <aside id="anuncio">
+            <h5>Para mais detalhes <br /> baixe o nosso app <br />  na PlayStore</h5>
+            <img id="foto" src="components/imagens/pagina-MeusCartoes/foto_garota.png" alt="">
+        </aside>
+    </section>
+
+   
+
+    <section id="contas">
+        <h1>Contas em dia</h1>
+
+        <div class="contas1">
+            <p class="par">14/02 - Quarta-feira</p>
+            <div class="contas2">
+                <p class="rend" >RENDIMENTOPAY INSTITUICAO DE PAGAMENTO</p>
+                <p class="val" >R$ 243,75</p>
+                <p class="linha" >Não pagável</p>
+            </div>
+        </div> 
+
+        <div class="contas1">
+            <p class="par">14/02 - Quarta-feira</p>
+            <div class="contas2">
+                <p class="rend" >RENDIMENTOPAY INSTITUICAO DE PAGAMENTO</p>
+                <p class="val" >R$ 243,75</p>
+                <p class="linha" >Não pagável</p>
+            </div>
+        </div> 
+
+
+     
+
+    </section>
+
+    <footer>
+        <img id="logo1" src="components/imagens/pagina-MeusCartoes/logo.png" alt="logo do site">
+        <div id="icones">
+            <img src="components/imagens/pagina-MeusCartoes/facebook 1.png" alt="">
+            <img src="components/imagens/pagina-MeusCartoes/instagram 1.png" alt="">
+            <img src="components/imagens/pagina-MeusCartoes/linkedin(1) 1.png" alt="">
+        </div>
+        <p>© 2024 E-Wallet. All rights reserved.</p>
+    </footer>
+
+
+
+    
+    
+</body>
+</html>

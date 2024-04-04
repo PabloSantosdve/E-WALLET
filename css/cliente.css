@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: #233327;
+    width: 100%;
+    height: 122px;
+}
+
+#perfil{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+#perfil img{
+    width: 100px;
+    height: 100px;
+    margin-top: -5px;
+}
+
+#nome{
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#escolha{
+    position: absolute;
+    top: 303px;
+    left: 900px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+#Fatura{
+    font-size: 20px;
+}
+
+#fatura1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cartoes{
+    margin-top: 10px;
+    width: 100px;
+    position: relative;
+}
+
+.cartoes img{
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+
+
+#principal{
+    width: 450px;
+    height: 300px;
+    margin-left: 360px;
+    margin-top: 80px;
+}
+
+/*Configurando o cartão preto pra escondido padrão*/
+#cartao-black {
+    display: none;
+}
+
+#cartão_princ p{
+    margin-left: 380px;
+}
+
+#cartão_princ button{
+    margin-left: 370px;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: #23BD4C;
+    font-size: 20px;
+    border: none;
+    border-radius: 16px;
+}
+
+
+#limite{
+    width: 600px;
+    margin-left: 370px;
+    margin-top: 30px;
+}
+
+#movimentaçao{
+    background-image: url(components/imagens/pagina-MeusCartoes/fundo_mov.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    margin-top: 80px;
+}
+
+#movimentaçao h1{
+    padding-top: 40px;
+    margin-left: -955px;
+}
+
+#txtBusca{
+    margin-left: -1245px;
+    margin-top: 15px;
+    width: 400px;
+    height: 45px;
+    border-radius: 50px;
+    border: 0 none;
+    outline: 0;
+    padding-left: 15px;
+}
+
+#background{
+    border: 1px black solid;
+    width: 730px;
+    height: 600px;
+    margin-left: 60px;
+    margin-top: 110px;
+    padding-top: 150px;
+    float: left;
+    border-radius: 20px;
+}
+
+#background h6{
+    background-color: #bdc7bf;
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-top: -120px;
+    margin-left: 30px;
+}
+
+.lançamentos{
+    background-color: #23BD4C;
+    width: 650px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-top: -35px;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+
+.lançamentos:hover{
+    background-color: #bdc7bf;
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.pix{
+    background-color: #bdc7bf;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    margin-left: 30px; 
+    margin-top: 20px;
+}
+
+#pix1{
+    width: 20px;
+    height: 20px;
+}
+
+.compras{
+    font-weight: bold;
+}
+
+.estabele{
+    margin-top: -20px;
+}
+
+.valor{
+    margin-left: 550px;
+}
+
+
+#anuncio{
+    background-color: #bdc7bf;
+    width: 500px;
+    height: 590px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 110px;
+    border-radius: 20px;
+}
+
+#anuncio h5{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#foto{
+    margin-top: 37px;
+    margin-left: 90px;
+}
+
+.par{
+    background-color: #EBEBEB;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+#contas{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contas h1{
+    margin-left: 550px;
+    padding-bottom: 20px;
+}
+
+.contas1{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+
+.contas2{
+    margin-top: 25px;
+    background-color: #EBEBEB;
+    width: 500px;
+    height: 150px;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.rend{
+    margin-top: 10px;
+}
+
+.val{
+    margin-top: 10px;
+}
+
+
+.linha{
+    margin-top: 30px;
+    border-top: 1px black solid;
+    width: 420px;
+}
+
+
+footer{
+    background-color: #233327;
+    margin-top: 200px;
+    width: 100%;
+    height: 200px;
+}
+
+footer p{
+    margin-left: 550px;
+    margin-top: 20px;
+    color: white;
+}
+
+#icones{
+    display: flex;
+    margin-left: 600px;
+    margin-top: -100px;
+}
+
+#icones img{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#icones img:hover{
+    color: white;
+    transition: 1ms;
+}
+
+#logo1{
+    width: 250px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 350px;
+}
+
+
+
+
