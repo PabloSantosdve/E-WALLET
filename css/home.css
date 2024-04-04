@@ -350,7 +350,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
 }
 
 .banco{
@@ -445,7 +444,7 @@ span {
 
 /* Ajuste dos planos */
 .planos #basic { 
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
@@ -456,7 +455,7 @@ span {
 
         
 .planos #plus { 
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
@@ -466,14 +465,13 @@ span {
 }
         
 .planos #ultra { 
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
 .ultra-bg {
     background: linear-gradient( 90deg, #fff500, #bcb501 );
 }
-
 /* Estilizando os botões dos planos */
 .button-acessar {
     width: 100%;
