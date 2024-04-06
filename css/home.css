@@ -8,14 +8,29 @@
     src: url('../components/fonts/Poppins/Poppins-Light.ttf') format('truetype');
     font-weight: normal;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
     --plano-basico-color:  linear-gradient( 90deg, #23BD4C, #11a037 );
+}
+
+body::-webkit-scrollbar {
+    width: 14px; /*width of the entire scrollbar*/
+}
+
+body::-webkit-scrollbar-track {
+    background: #868686; /*cor de funda da barra*/
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #11a037; /*cor do traço da de rolagem*/
 }
 
 /*CONFIGURAÇÕES GERAIS*/

@@ -3,15 +3,30 @@
     src: url('../components/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
     
 }
+
 @font-face{
     font-family: 'paragrafos';
     src: url('../components/fonts/Poppins/Poppins-Light.ttf') format('truetype');
     font-weight: normal;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 14px; /*width of the entire scrollbar*/
+}
+
+body::-webkit-scrollbar-track {
+    background: #d8d8d8; /*cor de funda da barra*/
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #499e60; /*cor do traço da de rolagem*/
 }
 
 header{
@@ -53,9 +68,11 @@ h1{
     margin-top: 30px;
     font-size: 40px;
 }
+
 p{
     font-family: 'titulo', Arial, Helvetica, sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'titulo', Arial, Helvetica, sans-serif;
 }
@@ -63,6 +80,7 @@ h1, h2, h3, h4, h5, h6{
 .paragrafo{
     font-family: 'titulo', Arial, Helvetica, sans-serif;
 }
+
 #header{
     display: flex;
     justify-content: space-between;
