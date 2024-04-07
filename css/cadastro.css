@@ -342,7 +342,62 @@ aside .container-btn .btn-autenticacao span{
 	}
 }
 
-/* CONFIGURANDO TELAS COM BASE NA LARGURA E ALTURA DELAS */
-@media screen and (max-width: 610px) and (min-height: 720px) {
-	/*Tela bem específica*/
+@media screen and (max-width:425px)  {
+	html {
+			
+
+		main article {
+			display: none;
+		}
+
+		main article #conteudo-article {
+			display: none;
+
+		}
+
+
+		#conteudo-article .logo {
+			display: none;
+
+		}
+
+		#conteudo-article .logo img {
+			display: none;
+		}
+
+		#conteudo-article .logo p {
+			/* 46px (explicação linha 8) */
+			display: none;
+		}
+
+		#conteudo-article .caixa-texto {
+			display: none;
+		}
+
+		#conteudo-article h1 {
+			display: none;
+		}
+
+		#conteudo-article h2 {
+			display: none;
+		}
+
+		main aside {
+			width: 100%;
+			height: 100%;
+		}
+		main {
+			position: relative;
+		
+			display: flex;
+			flex-direction: row;
+		
+			width: 100%;
+			height: 100vh;
+		
+			box-shadow: 10px 1px 20px 5px rgba(0, 0, 0, 0.253);
+			border-radius: 0px;
+			background-color: #f9f9f9;
+		}
+	}
 }

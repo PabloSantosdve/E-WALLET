@@ -1,14 +1,16 @@
-@font-face{
-    font-family: 'titulo';
-    src: url('../components/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
-    
+@font-face {
+	font-family: 'titulo';
+	src: url('../components/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+
 }
-@font-face{
-    font-family: 'paragrafos';
-    src: url('../components/fonts/Poppins/Poppins-Light.ttf') format('truetype');
-    font-weight: normal;
+
+@font-face {
+	font-family: 'paragrafos';
+	src: url('../components/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+	font-weight: normal;
 }
-*{
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -20,7 +22,7 @@ html {
 	font-size: 62.5%;
 }
 
-body{
+body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,8 +33,8 @@ body{
 	font-size: 1.6rem;
 
 	background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 
@@ -62,7 +64,7 @@ button {
 /*CAIXA DA IMAGEM - LADO ESQUERDO*/
 main article {
 	width: 50%;
-	
+
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 
@@ -80,7 +82,7 @@ main article #conteudo-article {
 
 	width: 100%;
 	height: 100%;
-	
+
 	color: #f9f9f9;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
@@ -103,7 +105,7 @@ main article #conteudo-article {
 #conteudo-article .logo p {
 	/* 46px (explicação linha 8) */
 	font-size: 4.6rem;
-    font-weight: bold;
+	font-weight: bold;
 }
 
 #conteudo-article .caixa-texto {
@@ -128,13 +130,13 @@ main aside {
 /* CONFIG. TEXTO INICIAL*/
 aside .caixa-texto h2 {
 	font-size: 3.2rem;
-    text-align: left;
+	text-align: left;
 }
 
 aside .caixa-texto h3 {
 	font-size: 1.4rem;
 	font-weight: 500;
-    text-align: left;
+	text-align: left;
 }
 
 /* CONFIG. FORMULÁRIO*/
@@ -167,10 +169,11 @@ aside form .campo-input label {
 	height: 100%;
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.6);
-	
+
 	pointer-events: none;
 	transition: transform 300ms ease, top 300ms ease;
 }
+
 /*Configurando a barra de input na forma normal e na forma quando o usuário vai digitar (:focus)*/
 aside form .campo-input input {
 	width: 100%;
@@ -179,7 +182,7 @@ aside form .campo-input input {
 
 	border: none;
 	border-bottom: 2px solid #27b71a;
-	
+
 	transition: border 300ms ease;
 	background-color: transparent;
 }
@@ -189,11 +192,11 @@ aside form .campo-input input:focus {
 	box-shadow: 0 1px 1px 0 #27b71a46;
 }
 
-aside form .campo-input input:focus + label,
-aside form .campo-input input:not(:placeholder-shown) + label {
-    transform: translateY(-18px);
-    font-size: 13px;
-    color: #27b71a;
+aside form .campo-input input:focus+label,
+aside form .campo-input input:not(:placeholder-shown)+label {
+	transform: translateY(-18px);
+	font-size: 13px;
+	color: #27b71a;
 }
 
 aside form .campo-checkbox {
@@ -255,9 +258,9 @@ aside #linha-divisoria hr {
 }
 
 /* Colocando o texto em cima da linha horizontal e "apagando" ela com o 'background-color' */
-aside #linha-divisoria span{
+aside #linha-divisoria span {
 	position: absolute;
-	padding: 0px 15px; 
+	padding: 0px 15px;
 	background-color: #f9f9f9;
 }
 
@@ -272,7 +275,7 @@ aside .container-btn {
 }
 
 /* Configurações de todo o botão*/
-aside .container-btn .btn-autenticacao{
+aside .container-btn .btn-autenticacao {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -294,18 +297,18 @@ aside .container-btn .btn-autenticacao img {
 }
 
 /*Espaçamento à direita do texto para centralizar*/
-aside .container-btn .btn-autenticacao span{
+aside .container-btn .btn-autenticacao span {
 	margin-right: 10%;
 }
 
-aside #link_senha{
-    text-decoration: none;
-    text-align: right;
-    color: blue;
+aside #link_senha {
+	text-decoration: none;
+	text-align: right;
+	color: blue;
 }
 
-aside  #lembre{
-    margin-left: 20px;
+aside #lembre {
+	margin-left: 20px;
 }
 
 /* CONFIGURAÇÃO PARA TELAS COM BASE NA LARGURA DELAS */
@@ -336,7 +339,7 @@ aside  #lembre{
 	#conteudo-article h1 {
 		font-size: 3.6rem;
 	}
-	
+
 	#conteudo-article h2 {
 		font-size: 1.7rem;
 		font-weight: 400;
@@ -348,7 +351,7 @@ aside  #lembre{
 		width: 100%;
 	}
 
-	aside .container-btn .btn-autenticacao{
+	aside .container-btn .btn-autenticacao {
 		width: 100%;
 	}
 }
@@ -374,18 +377,75 @@ aside  #lembre{
 }
 
 @media screen and (max-height: 645px) {
-	main aside{
+	main aside {
 		padding-top: 18px;
 	}
 
 	aside form {
 		gap: 4px;
-	
+
 		margin-top: 5%;
 	}
 }
 
 /* CONFIGURANDO TELAS COM BASE NA LARGURA E ALTURA DELAS */
-@media screen and (max-width: 610px) and (min-height: 720px) {
-	/* Tela específica para uma proporção diferente de tela */
+
+@media screen and (max-width:425px)  {
+	html {
+			
+
+		main article {
+			display: none;
+		}
+
+		main article #conteudo-article {
+			display: none;
+
+		}
+
+
+		#conteudo-article .logo {
+			display: none;
+
+		}
+
+		#conteudo-article .logo img {
+			display: none;
+		}
+
+		#conteudo-article .logo p {
+			/* 46px (explicação linha 8) */
+			display: none;
+		}
+
+		#conteudo-article .caixa-texto {
+			display: none;
+		}
+
+		#conteudo-article h1 {
+			display: none;
+		}
+
+		#conteudo-article h2 {
+			display: none;
+		}
+
+		main aside {
+			width: 100%;
+			height: 100%;
+		}
+		main {
+			position: relative;
+		
+			display: flex;
+			flex-direction: row;
+		
+			width: 100%;
+			height: 100vh;
+		
+			box-shadow: 10px 1px 20px 5px rgba(0, 0, 0, 0.253);
+			border-radius: 0px;
+			background-color: #f9f9f9;
+		}
+	}
 }
