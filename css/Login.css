@@ -281,7 +281,7 @@ aside .container-btn .btn-autenticacao {
 	justify-content: space-around;
 	align-items: center;
 
-	width: 40%;
+	width: 48%;
 	height: 55px;
 	padding: 10px;
 
@@ -392,60 +392,59 @@ aside #lembre {
 
 @media screen and (max-width:425px)  {
 	html {
-			
-
-		main article {
-			display: none;
-		}
-
-		main article #conteudo-article {
-			display: none;
-
-		}
-
-
-		#conteudo-article .logo {
-			display: none;
-
-		}
-
-		#conteudo-article .logo img {
-			display: none;
-		}
-
-		#conteudo-article .logo p {
-			/* 46px (explicação linha 8) */
-			display: none;
-		}
-
-		#conteudo-article .caixa-texto {
-			display: none;
-		}
-
-		#conteudo-article h1 {
-			display: none;
-		}
-
-		#conteudo-article h2 {
-			display: none;
-		}
-
-		main aside {
-			width: 100%;
-			height: 100%;
-		}
-		main {
-			position: relative;
-		
-			display: flex;
-			flex-direction: row;
-		
-			width: 100%;
-			height: 100vh;
-		
-			box-shadow: 10px 1px 20px 5px rgba(0, 0, 0, 0.253);
-			border-radius: 0px;
-			background-color: #f9f9f9;
-		}
+		font-size: 49%;
 	}
+
+
+	main article {
+		display: none;
+	}
+
+	main {
+		width: 100%;
+		height: 100vh;
+	
+		box-shadow: 0;
+		border-radius: 0px;
+	}
+
+	main aside {
+		width: 100%;
+		height: 100%;
+	}
+
+	main aside .caixa-texto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	main aside .caixa-texto h2 {
+		font-size: 3.15rem;
+		text-align: center;
+	}
+
+	main aside .caixa-texto h3 {
+		font-size: 2rem;
+		text-align: center;
+		margin: 10px 0;
+		width: 80%;
+	}
+
+	aside form {
+		justify-content: start;
+		gap: 10%;
+	
+		width: 100%;
+		height: 40%;
+		margin-top: 10%;
+	}
+
+
+	aside #lembre {
+		margin-left: 8px;
+	}
+	
 }
