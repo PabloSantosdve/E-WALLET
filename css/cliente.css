@@ -283,7 +283,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #contas{
-
+    width: auto;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -295,7 +296,6 @@ h1, h2, h3, h4, h5, h6{
 
 .contas1{
     margin-left: 120px;
-    margin-top: 50px;
 }
 
 
