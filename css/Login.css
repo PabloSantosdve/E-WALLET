@@ -226,13 +226,15 @@ aside form .campo-checkbox input {
 
 }
 
-aside form button {
-	width: 60%;
+aside form #link_login {
+	width: 100%;
+	padding: 10px 20px;
 	margin: 0 auto 10px auto;
-	padding: 10px;
 
-	font-size: 1.8rem;
 	color: white;
+	font-size: 1.8rem;
+	text-decoration: none;
+	text-align: center;
 
 	border: none;
 	border-radius: 10px;
