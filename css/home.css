@@ -152,6 +152,7 @@ header nav a:hover{
 main {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* SEÇÃO PRINCIPAL HOME */
@@ -249,42 +250,113 @@ main {
 
 #cartao {
     visibility: hidden;
-
     margin-left: 60px;
 }
 
 
-/* SEÇAO DE QUEM SOMOS */
-#Quem_Somos-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 50px;
+/* SEÇAO DE BENEFICIOS */
+#section-beneficios {
+    width: 100%;
+    height: 110vh;
+    margin-top: 80px;
 }
 
+#section-beneficios h1 {
+    font-size: 56px;
+    text-align: center;
+}
 
-/*Container que contém todo conteúdo principal (texto/botaão e imagem)*/
-#container-QuemSomos {
+#section-beneficios .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-    width: 100%;
-}
-
-/*Estilizando a caixa que tem o conteúdo (lista, botão) da seção "Quem somos" */
-#container-QuemSomos .conteudo-box {
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
-
-    width: 40%;
-    height: 780px;
-    padding-left: 10%; /*Coloquei um padding para "identar" a lista de elementos*/
+    margin-top: 100px;
 }
+
+#section-beneficios .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-radius: 30px;
+    background-color: #6BFF5Fdd;
+}
+
+#celular {
+    position: absolute;
+    top: 1740px;
+    left: 620px;
+}
+
+#notebook {
+    position: absolute;
+    left: 800px;
+}
+
+#section-beneficios #caixa1 {
+    width: 679px;
+    height: 396px;
+    padding: 25px;
+
+    box-shadow: 0 1px 4px #baeabf25;
+}
+
+#section-beneficios #caixa1 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 65%;
+    font-size: 25px;
+    list-style: none;
+}
+
+#bank {
+    width: 376px;
+    height: 376px;
+    margin-right: 12%;
+}
+
+#section-beneficios button {
+    width: 450px;
+    padding: 39px 51px;
+    
+    color: white;
+    font-size: 32px;
+    
+    border: none;
+    border-radius: 15px;
+    background-color: #02AB2F;
+    box-shadow: 1px 1px 4px #baeabf;
+}
+
+#section-beneficios #caixa2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    
+    width: 656px;
+    height: 287px;
+    padding: 25px;
+
+    border-top-left-radius: 100px;
+
+    box-shadow: 0 1px 15px #baeabf2d;
+}
+
+#section-beneficios #caixa2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 65%;
+    font-size: 25px;
+    list-style: none;
+    text-align: right;
+}
+
 /*ESTILIZANDO OS BOTÕES DAS SECTIONS*/
 #membro{
     width: 370px;
@@ -295,132 +367,8 @@ main {
     transition: all 0.5s;
     cursor: pointer;
 }
-#Quem_Somos-section button:hover{
-    background-color: black;
-    color: white;
-    
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342);
-    transition: all 0.5s;
-}
-#Beneficios-section button:hover{
-    background-color: black;
-    color: white;
-   
-
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342);
-    transition: all 0.5s;
-}
-/*Alinhando a lista mais ao meio*/
-.conteudo-box ul {
-    margin-top: 100px;
-}
-
-/*Estilizando cada item da lista (cada um que tem bolinha do lado)*/
-.conteudo-box ul li {
-    color: #02AB2F; /*Cor da bolinha*/
-    font-size: 40px; /*Tamanho da bolinha*/
-    margin-bottom: 30px; /*Dando um espaçamento de 30px entre cada item da lista*/
-}
-
-/*Configurando o texto dentro de cada item da lista*/
-.conteudo-box ul li p {
-    color: black;
-    font-size: 32px;
-}
-
-/*Estilização do botão dentro da Seção Quem somos!*/
-.conteudo-box button {
-    width: 70%;
-    padding: 20px;
-    margin-right: 70px; /*Devido ao padding no elemento pai, preciso usar essa margin pra forçar um alinhamento centralizado*/
-    
-    font-size: 32px;
-    
-    border: none; /*tirando a borda preta que fica em volta do botão*/
-    border-radius: 35.5px;
-    background-color: #02AB2F;
-}
-
-/* BENEFÍCIOS SECTION */
-#Beneficios-section {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    width: 100%;
-    margin-top: 225px;
-}
-
-/*Conteúdo principal da seção beneficios*/
-#container-Beneficios {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-
-    width: 100%;
-    margin-top: 40px;
-}
-
-#container-Beneficios .conteudo-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    gap: 40px;
-    
-    width: 40%;
-    height: 780px;
-    padding-right: 10%;
-}
-
-
-/* Esse código eu estou invertendo a <ul> para que a 'bolinha' mudasse de lado, deixando tudo de ponta cabeça */
-#container-Beneficios .conteudo-box ul {
-    transform: rotate(180deg);
-}
-
-/* Aqui eu arrumei o parágrafo para ~não~ ficar invertido!*/
-#container-Beneficios .conteudo-box ul li p {
-    text-align: right;
-    transform: rotate(-180deg);
-}
 
 /* SESSÃO DOS NOSSOS PARCEIROS */
-#nossos_parceiros{
-    width: 100%;
-    height: 300px;
-    background-color: #02AB2F;
-    display:flex ;
-    align-items: center;
-}
-
-/* Ajuste da imagem dos bancos */
-.banco img{
-    height: 200px;
-}
-
-/* Ajuste da tipografia dos bancos */
-#nossos_parceiros h1{
-    color: #fff;
-    font-family: Arial;
-}
-
-.bancos-parceiros{
-    width: 100%;
-    height: 200px;
-    display:inline-flex ;
-    align-items: center;
-    justify-content: space-around;
-    animation: 10s slide infinite linear; 
-}
-
-.banco{
-    width: 25%;
-    height: 150px;
-    margin: 30px;
-}
 
 /* SLIDE DOS BANCOS */
 @keyframes slide {
@@ -430,6 +378,48 @@ main {
     to{
         transform:translateX(-100%);
     }
+}
+
+#nossos_parceiros{
+    display:flex ;
+    align-items: center;
+
+    width: 100%;
+    height: 300px;
+    padding: 60px 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #02AB2F;
+}
+
+/* Ajuste da tipografia dos bancos */
+#nossos_parceiros h1{
+    color: #fff;
+    font-family: Arial;
+}
+
+.bancos-parceiros{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    
+    width: 100%;
+    height: 200px;
+    
+    animation: 8s slide infinite linear; 
+}
+
+.banco{
+    width: 25%;
+    height: 200px;
+    margin: 0 20px;
+}
+
+/* Ajuste da imagem dos bancos */
+.banco img{
+    height: 100%;
 }
 
 /* SESSÃO DE CONHEÇA NOSSOS PLANOS */
@@ -449,27 +439,36 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
+    gap: 5%;
+    
     width: 100%;
-    height: 700px;
+    height: 100%;
     padding: 15px;
-    gap: 50px;
     margin-top: 80px;
   }
 
+  
+/* Ajuste dos planos */
 .planos > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 10px; 
-    
+
+    width: 28%;
+    height: 100%;
 }
 
-span {
-    font-size: 40pt;
-    font-weight: bold;
-    width: 100%;
+.basic-bg {
+    background: linear-gradient( 90deg, #23BD4C, #11a037 );
 }
 
+.plus-bg {
+    background: linear-gradient( 90deg, #82ff05, #6ddd14 );
+}        
+
+.ultra-bg {
+    background: linear-gradient( 90deg, #fff500, #bcb501 );
+}
 
 .plano-titulo{
     width: 100%;
@@ -478,74 +477,59 @@ span {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 28px;
-    
-   
+    font-size: 28px;   
 }
 
-
 .conteudo-plano {
-    background-color: #ffffff;
-    margin: 5px;
-    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     
-    border-radius: 10px;
+    height: 90%;
+    margin: 0 5px;
+
+    background-color: #ffffff;
+}
+
+.conteudo-plano span {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+    font-size: 44px;
+    font-weight: bold;
 }
 
 .conteudo-plano ul {
-    width: auto;
+    width: 90%;
+    margin: auto;
 }
 
 .conteudo-plano ul li {
-    text-align: left;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin: 25px;
-    gap: 20px;
-    font-size: 30px;
+    gap: 15%;
+    
+    width: 100%;
+    padding: 15px;
+    padding-right: 0;
+    
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.752);
 }
 
 /* Ajuste das imagens dos planos */
 .conteudo-plano ul li img {
-    height: 5%;
-}
-
-/* Ajuste dos planos */
-.planos #basic { 
-    width: 40%;
+    width: 32px;
     height: 100%;
 }
 
-
-.basic-bg {
-    background: linear-gradient( 90deg, #23BD4C, #11a037 );
+.conteudo-plano ul li p {
+    width: 100%;
+    text-align: start;
 }
 
-        
-.planos #plus { 
-    width: 40%;
-    height: 100%;
-}
-
-.plus-bg {
-
-    background: linear-gradient( 90deg, #82ff05, #6ddd14 );
-}
-        
-.planos #ultra { 
-    width: 40%;
-    height: 100%;
-}
-
-.ultra-bg {
-    background: linear-gradient( 90deg, #fff500, #bcb501 );
-}
 /* Estilizando os botões dos planos */
 .button-acessar {
     width: 100%;
@@ -554,9 +538,6 @@ span {
 
     color: #fff;
     border: none;
-    border-radius: 10px;
-    
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342);
 }
 
 #button-basic {
