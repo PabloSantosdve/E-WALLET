@@ -376,7 +376,7 @@ main {
         transform: translateX(0);
     }
     to{
-        transform:translateX(-100%);
+        transform:translateX(-105%);
     }
 }
 
@@ -417,16 +417,6 @@ main {
     margin: 0 20px;
 }
 
-
-/* SLIDE DOS BANCOS */
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform:translateX(-100%);
-    }
-}
 
 /* Ajuste da imagem dos bancos */
 .banco img{
