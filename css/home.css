@@ -1089,7 +1089,6 @@ gap: 10px;
     }
 }
 
-/* Redmi Note 8*/
 @media screen and (min-width: 1080px) and (min-height: 2340px) {
     #Home_main-section {
         height: 25vh;
