@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6{
 
 #escolha{
     position: absolute;
-    top: 303px;
+    top: 280px;
     left: 900px;
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6{
 .icone{
     width: 50px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 25px;
 }
 
@@ -169,13 +169,13 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 80px;
 }
 
-#movimentaçao h1{
-    padding-top: 40px;
+#titulos1{
+    margin-top: 120px;
     margin-left: -955px;
 }
 
 #txtBusca{
-    margin-left: -1245px;
+    margin-left: 480px;
     margin-top: 15px;
     width: 400px;
     height: 45px;
