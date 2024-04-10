@@ -43,6 +43,23 @@ nav{
     background-color: #23BD4C;
     width: 100%;
     height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo1{
+    width: 200px;
+    height: 100px;
+}
+
+#logo{
+    display: flex;
+    text-decoration: none;
+}
+
+#logo h1{
+    font-size: 25px;
+    color: white;
 }
 
 #perfil{
@@ -59,7 +76,7 @@ nav{
 }
 
 #nome{
-    margin-top: 30px;
+    margin-top: 25px;
     margin-right: 50px;
     font-size: 22px;
     text-decoration: none;
