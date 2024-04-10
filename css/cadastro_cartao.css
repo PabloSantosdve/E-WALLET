@@ -144,9 +144,9 @@ button:hover{
     height: 100%;
 }
 
-/* Responsivo do TABLET*/
-@media only screen and (min-width:840px){
-    @media only screen and (max-width:1326px){
+/* Responsivo do TABLET
+@media only screen and (min-width:680px) and (max-height: 1031px){
+
         #cadastro_cartao{
             width: 70%;
             margin-left: 150px;
@@ -162,7 +162,7 @@ button:hover{
         #frente_do_cartao{
             margin-top: 95px;
             margin-left: 15px;
-            width: 35%;
+            width: 30%;
             height: 180px;
         }
 
@@ -176,47 +176,377 @@ button:hover{
         }
 
     }
-}
 
-@media only screen and (min-width:480px){
-    @media only screen and (max-width:839px){
+ Galaxy s9, note 8, s8
+@media only screen and (min-width:360px) and (max-height: 740px){
+
+        h1{
+            font-size: 8px;
+        }
         #cadastro_cartao{
-            width: 70%;
-            margin-left: 150px;
-            margin-top: 80px;
+            width: 100%;
+            margin: 50px;
+            margin-left: 0px;
             height: 600px;
         }
 
         form{
-            top: 150px;
-            left: 150px;
+            top: 130px;
+            left: 0px;
 
-            width: 20%;
+            height: 500px;
+            width: 100%;
+            
         }
         button{
-            width: 100%;
+            width: 95%;
         }
         #frente_do_cartao{
-            width: 30%;
+            display: none;
+            visibility: hidden;
         }
 
         #verso_do_cartao{
-           width: 30%;
-        
+           display: none;
+           visibility: hidden;
         }
 
         #nome_no_cartao{
-           
+           width: 90%;
         }
         #numero_no_cartao{
-            
+            width: 90%;
         }
         #validade_cartao{
-            
+            width: 90%;
         }
         #cvv_cartao{
-           
+            width: 90%;
         }
 
     }
-}
+
+    @media only screen and (min-width:393px) and (max-height: 786px){
+
+        h1{
+            font-size: 8px;
+        }
+        #cadastro_cartao{
+            width: 100%;
+            margin: 50px;
+            margin-left: 0px;
+            height: 600px;
+        }
+
+        form{
+            top: 130px;
+            left: 0px;
+
+            height: 500px;
+            width: 100%;
+            
+        }
+        button{
+            width: 95%;
+        }
+        #frente_do_cartao{
+            display: none;
+            visibility: hidden;
+        }
+
+        #verso_do_cartao{
+           display: none;
+           visibility: hidden;
+        }
+
+        #nome_no_cartao{
+           width: 90%;
+        }
+        #numero_no_cartao{
+            width: 90%;
+        }
+        #validade_cartao{
+            width: 90%;
+        }
+        #cvv_cartao{
+            width: 90%;
+        }
+
+    }
+    Galaxy S9 Plus, S8 Plus
+    @media only screen and (min-width:412px) and (max-height: 846px){
+
+        h1{
+            font-size: 8px;
+        }
+        #cadastro_cartao{
+            width: 100%;
+            margin: 50px;
+            margin-left: 0px;
+            height: 600px;
+        }
+
+        form{
+            top: 130px;
+            left: 0px;
+
+            height: 500px;
+            width: 100%;
+            
+        }
+        button{
+            width: 95%;
+        }
+        #frente_do_cartao{
+            display: none;
+            visibility: hidden;
+        }
+
+        #verso_do_cartao{
+           display: none;
+           visibility: hidden;
+        }
+
+        #nome_no_cartao{
+           width: 90%;
+        }
+        #numero_no_cartao{
+            width: 90%;
+        }
+        #validade_cartao{
+            width: 90%;
+        }
+        #cvv_cartao{
+            width: 90%;
+        }
+
+    }
+    iPhone XS, X
+    @media only screen and (min-width:375px) and (max-height: 812px){
+
+        h1{
+            font-size: 8px;
+        }
+        #cadastro_cartao{
+            width: 100%;
+            margin: 50px;
+            margin-left: 0px;
+            height: 600px;
+        }
+
+        form{
+            top: 130px;
+            left: 0px;
+
+            height: 500px;
+            width: 100%;
+            
+        }
+        button{
+            width: 95%;
+        }
+        #frente_do_cartao{
+            display: none;
+            visibility: hidden;
+        }
+
+        #verso_do_cartao{
+           display: none;
+           visibility: hidden;
+        }
+
+        #nome_no_cartao{
+           width: 90%;
+        }
+        #numero_no_cartao{
+            width: 90%;
+        }
+        #validade_cartao{
+            width: 90%;
+        }
+        #cvv_cartao{
+            width: 90%;
+        }
+
+    }
+    iPhone XR, XS Max
+    @media only screen and (min-width:397px) and (max-height: 896px){
+
+        h1{
+            font-size: 8px;
+        }
+        #cadastro_cartao{
+            width: 100%;
+            margin: 50px;
+            margin-left: 0px;
+            height: 600px;
+        }
+
+        form{
+            top: 130px;
+            left: 0px;
+
+            height: 500px;
+            width: 100%;
+            
+        }
+        button{
+            width: 95%;
+        }
+        #frente_do_cartao{
+            display: none;
+            visibility: hidden;
+        }
+
+        #verso_do_cartao{
+           display: none;
+           visibility: hidden;
+        }
+
+        #nome_no_cartao{
+           width: 90%;
+        }
+        #numero_no_cartao{
+            width: 90%;
+        }
+        #validade_cartao{
+            width: 90%;
+        }
+        #cvv_cartao{
+            width: 90%;
+        }
+
+    }
+    Medium Screen
+    @media only screen and (max-width: 1024px) and (max-height: 800px){
+        body{
+            background-image: linear-gradient(to bottom, rgb(2, 171, 47), #376e45);
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+            
+        }
+        
+        section h1{
+            font-size: 35px;
+            padding: 10px;
+        }
+        
+        #cadastro_cartao{
+            margin: auto;
+            height: 450px;
+            width: 60%;
+        
+            margin: auto;
+            margin-top: 85px;
+            margin-left: 350px;
+            
+        
+            background-color: white;
+            text-align: center;
+        
+            border-radius: 40px;
+        
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.432);
+        }
+        
+        Formulario
+        form{
+            height: 300px;
+            width: 40%;
+        
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        
+            position: absolute;
+            z-index: 1;
+            top: 150px;
+            left: 600px;
+        
+        
+            
+         
+        }
+        
+        #nome_no_cartao{
+            border: 0.2px solid rgba(0, 0, 0, 0);
+            border-bottom: 1px solid black;
+            height: 40px;
+            margin-left: 10px;
+        }
+        #numero_no_cartao{
+            border: 0.2px solid rgba(0, 0, 0, 0);
+            border-bottom: 1px solid black;
+            padding: 0px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        #validade_cartao{
+            border: 0.2px solid rgba(0, 0, 0, 0);
+            border-bottom: 1px solid black;
+            padding: 0px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        #cvv_cartao{
+            border: 0.2px solid rgba(0, 0, 0, 0);
+            border-bottom: 1px solid black;
+            padding: 0px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        
+        /*Botão*/     /*
+        button{
+            width: 30%;
+            height: 45px;
+            background-color: rgb(35, 51, 39);
+            color: white;
+            border: 0px solid rgba(0, 0, 0, 0);
+            margin-left: 10px;
+            border-radius: 20px;
+        
+            transition: all 0.4s;
+            
+        }
+        
+        button:hover{
+            background-color: rgb(53, 255, 104);
+            color: rgb(0, 0, 0);
+           
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.438);
+        }
+        
+        /*imagens
+        
+        #frente_do_cartao{
+            position: absolute;
+            z-index: 2;
+            
+            
+            
+            width: 30%;
+            height: 250px;
+            margin-left: 180px;
+            margin-top: 85px;
+        }
+        
+        #frente_do_cartao img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        #verso_do_cartao{
+            width: 17%;
+            height: 150px;
+            position: absolute;
+            z-index: 3;
+            top: 300px;
+            left: 880px;
+            
+        }
+        #verso_do_cartao img{
+            width: 100%;
+            height: 100%;
+        }
+    }
