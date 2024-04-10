@@ -955,10 +955,8 @@ gap: 10px;
     }
 }
 
-
-
 /*Next hub*/
-@media screen and (max-width: 1024px) and (min-height: 600px){
+@media screen and (max-width: 1024px) and (max-height: 600px) {
 
     header {
         justify-content: space-around;
@@ -1092,8 +1090,102 @@ gap: 10px;
 }
 
 /* Redmi Note 8*/
-@media screen and (max-width: 1080px) and (min-height: 2340px) {
+@media screen and (min-width: 1080px) and (min-height: 2340px) {
+    #Home_main-section {
+        height: 25vh;
+    }
 
+    #Home_main-section #conteudo-main .titulos {
+        font-size: 20px;
+    }
+
+    #Home_main-section #conteudo-main button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    #Cartoes-section {
+        height: 20vh;
+    }
+
+    #Cartoes-section #cartao {
+        width: 280px;
+    }
+
+    #Cartoes-section .content-box .titulos {
+        font-size: 35px;
+    }
+
+    #Cartoes-section .content-box .paragrafo {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    #section-beneficios {
+        height: 32vh;
+    }
+
+    #section-beneficios .container {
+        margin-top: 50px;
+    }
+
+    #section-beneficios .container #caixa1 {
+        width: 460px;
+        height: 270px;
+    }
+
+    #section-beneficios .container #caixa1 ul li{
+        font-size: 18px;
+    }
+
+    #celular {
+        top: 50%;
+        left: 360px;
+
+        height: 380px;
+    }
+
+    #bank {
+        height: 250px;
+    }
+
+    #notebook {
+        height: 260px;
+        left: 350px;
+    }
+
+    #section-beneficios .container #caixa2 {
+        width: 460px;
+        height: 200px;
+    }
+
+    #section-beneficios .container #caixa2 ul{
+        justify-content: center;
+    }
+
+    #section-beneficios .container #caixa2 ul li{
+        font-size: 16px;
+    }
+
+    #section-beneficios .container button{
+        font-size: 23px;
+
+        width: 280px;
+    }
+
+    #conheca_nossos_planos_section{
+        height: 790px;
+    }
+
+    #sobre_nos_section a{
+        width: 180px;
+        height: 250px;
+    }
+
+    #sobre_nos_section .foto .flip-card {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /*IPad Pro*/
@@ -1334,9 +1426,6 @@ gap: 10px;
         margin-top: 0;
     }
 
-    #footer-home {
-        height: 50vh;
-    }
 }
 
 /*Asus Zenbook Fold*/
@@ -1395,10 +1484,17 @@ gap: 10px;
         width: 45%;
         height: 50%;
     }
+
+    #Home_main-section #conteudo-main  button {
+        width: 200px;
+        height: 45px;
+        padding: 5px 10px;
+        font-size: 18px;
+    }
     
     #Home_main-section #conteudo-main h1{
         margin-top: 70px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #Cartoes-section {
@@ -1422,7 +1518,7 @@ gap: 10px;
     }
 
     #celular {
-        top: 79%;
+        top: 83%;
         left: 310px;
 
         width: auto;
@@ -1487,11 +1583,15 @@ gap: 10px;
         background-color: #02AB2F;
         box-shadow: 1px 1px 4px #baeabf;
     }
+
+    #sobre_nos_section .foto a {
+        height: 100px;
+    }
 }
 
 /*IPad Mini*/
 @media screen and (max-width: 768px) {
-    
+
 }
 
 /* IPhone 14 Pro Max */
