@@ -985,7 +985,10 @@ gap: 10px;
     }
 }
 
+/* Redmi Note 9*/
+@media screen and (max-width: 1080px) and (min-height: 2340px) {
 
+}
 /*IPad Pro*/
 @media screen and (max-width: 1024px) and (min-height: 1368px) {
     /* SEÇÃO PRINCIPAL HOME */
@@ -1104,7 +1107,7 @@ gap: 10px;
     }
 }
 
-/*Surface Pro 7 -> POUCOS AJUSTES*/
+/*Surface Pro 7*/
 @media screen and (max-width: 912px) {
     #Cartoes-section #cartao {
         margin: 0;
