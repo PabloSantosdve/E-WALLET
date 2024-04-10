@@ -77,11 +77,9 @@ header h1{
    color: white;
    width: 250px;
    height: 60px;
-   font-size: 40px;
    text-align: center;
    font-family: 'cabecalho-titulo', 'titulos', Arial, Helvetica, sans-serif;
    font-size: 45px;
-   float: left;
 }
 
 header button {
@@ -115,8 +113,6 @@ header button:hover{
     align-items: center;
     justify-content: space-around;
     color: white;
-    float: left;
- 
 }
 #logo img{
     width: 50%;
@@ -760,7 +756,7 @@ gap: 10px;
 /* -=-= TELAS RESPONSIVO -=-=*/
 
 /*4K*/
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
 
     #section-beneficios {
         width: 100%;
@@ -962,26 +958,136 @@ gap: 10px;
 
 
 /*Next hub*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-height: 600px){
+
+    header {
+        justify-content: space-around;
+        height: 10vh;
+    }
+
+    header #logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header #logo img {
+        height: 50px;
+    }
+
+    header #logo h1 {
+        width: 200px;
+        height: auto;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    header #navegador_home {
+        width: 60%;
+        gap: 5%
+    }
+
+    header #navegador_home nav {
+        width: 100%;
+        gap: 2%;
+    }
+
+    header #navegador_home nav a {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+    }
 
     #Home_main-section {
         height: 80vh;
     }
 
+    #Home_main-section #conteudo-main .titulos {
+        font-size: 20px;
+    }
+
+    #Home_main-section #conteudo-main button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
     #Cartoes-section {
         height: 60vh;
+
+    }
+
+    #Cartoes-section #cartao {
+        width: 280px;
+    }
+
+    #Cartoes-section .content-box .titulos {
+        font-size: 35px;
+    }
+
+    #Cartoes-section .content-box .paragrafo {
+        width: 95%;
+        font-size: 14px;
     }
 
     #section-beneficios {
         height: 150vh;
     }
 
+    #section-beneficios .container {
+        margin-top: 50px;
+    }
+
+    #section-beneficios .container #caixa1 {
+        width: 460px;
+        height: 270px;
+    }
+
+    #section-beneficios .container #caixa1 ul li{
+        font-size: 18px;
+    }
+
     #celular {
-        top: 170%
+        top: 160%;
+        left: 350px;
+
+        height: 380px;
+    }
+
+    #bank {
+        height: 250px;
+    }
+
+    #notebook {
+        height: 260px;
+        left: 350px;
+    }
+
+    #section-beneficios .container #caixa2 {
+        width: 460px;
+        height: 200px;
+    }
+
+    #section-beneficios .container #caixa2 ul{
+        justify-content: center;
+    }
+
+    #section-beneficios .container #caixa2 ul li{
+        font-size: 16px;
     }
 
     #conheca_nossos_planos_section{
-        height: 890px;
+        height: 790px;
+    }
+
+    #sobre_nos_section a{
+        width: 180px;
+        height: 250px;
+    }
+
+    #sobre_nos_section .foto .flip-card {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -989,6 +1095,7 @@ gap: 10px;
 @media screen and (max-width: 1080px) and (min-height: 2340px) {
 
 }
+
 /*IPad Pro*/
 @media screen and (max-width: 1024px) and (min-height: 1368px) {
     /* SEÇÃO PRINCIPAL HOME */
