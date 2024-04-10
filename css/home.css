@@ -1150,16 +1150,36 @@ gap: 10px;
 }
 
 /*Asus Zenbook Fold*/
-@media screen and (max-width: 853px) and (max-height: 1280px) {
+@media screen and (max-width: 853px) {
 
 }
 
 /*IPad Air*/
-@media screen and (max-width: 820px) and (max-height: 1180px) {
+@media screen and (max-width: 820px) {
     
 }
 
 /*IPad Mini*/
-@media screen and (max-width: 768px) and (max-height: 1024px) {
+@media screen and (max-width: 768px) {
+
+}
+
+/* IPhone 14 Pro Max */
+@media screen and (max-width: 430px) {
+
+}
+
+/* IPhone XR */
+@media screen and (max-width: 414px) {
+
+}
+
+/* IPhone Pro */
+@media screen and (max-width: 390px) {
+
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px) {
 
 }
