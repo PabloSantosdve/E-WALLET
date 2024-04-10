@@ -760,7 +760,7 @@ gap: 10px;
 /* -=-= TELAS RESPONSIVO -=-=*/
 
 /*4K*/
-@media screen and (max-width: 2560px) and (min-width: 1921px) {
+@media screen and (max-width: 2560px) {
 
     #section-beneficios {
         width: 100%;
@@ -780,7 +780,7 @@ gap: 10px;
 }
 
 /* Macbook PRO */
-@media screen and (max-width: 1440px) and (max-height: 900px){
+@media screen and (max-width: 1440px){
 
     #Home_main-section #conteudo-main {
         width: 45%;
@@ -868,7 +868,7 @@ gap: 10px;
 }
 
 /* Next Hub Max */
-@media screen and (max-width: 1280px) and (max-height: 800px){
+@media screen and (max-width: 1280px){
 
     #Cartoes-section .content-box h2 {
         font-size: 45px;
@@ -962,7 +962,7 @@ gap: 10px;
 
 
 /*Next hub*/
-@media screen and (max-width: 1024px) and (max-height: 600px) {
+@media screen and (max-width: 1024px){
 
     #Home_main-section {
         height: 80vh;
@@ -987,7 +987,7 @@ gap: 10px;
 
 
 /*IPad Pro*/
-@media screen and (max-width: 1024px) and (max-height: 1368px) {
+@media screen and (max-width: 1024px) and (min-height: 1368px) {
     /* SEÇÃO PRINCIPAL HOME */
     #Home_main-section {
         height: 40vh;
@@ -1105,7 +1105,7 @@ gap: 10px;
 }
 
 /*Surface Pro 7 -> POUCOS AJUSTES*/
-@media screen and (max-width: 912px) and (max-height: 1368px) {
+@media screen and (max-width: 912px) {
     #Cartoes-section #cartao {
         margin: 0;
     }
