@@ -40,15 +40,15 @@ header{
 }
 
 nav{
-    background-color: #233327;
+    background-color: #23BD4C;
     width: 100%;
-    height: 122px;
+    height: 110px;
 }
 
 #perfil{
     display: flex;
     justify-content: end;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 15px;
 }
 
@@ -518,6 +518,14 @@ footer {
         margin-top: 0px;
     }
 
+    .redes-socias-home{
+        margin-right: 70px;
+    }
+
+    #sociais{
+        margin-left: 20px;
+    }
+
     
    }
 }
@@ -625,14 +633,166 @@ footer {
         margin-top: 0px;
     }
 
+    .redes-socias-home{
+        margin-right: 110px;
+    }
+
+    #sociais{
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    .slide{
+        background-color: #23BD4C;
+        width: 100px;
+    }
+
+    .slide img{
+        width: 200px;
+        height: 100px;
+    }
+
     
    }
 }
 
-@media only screen and (min-width: 674px){
-    @media only screen and (max-width: 1069px)
+@media only screen and (min-width: 480px){
+    @media only screen and (max-width: 679px)
    {
 
+    #header{
+        margin-left: -140px;
+    }
+
+    nav{
+        height: 50px;
+    }
+
+    #perfil img{
+        width: 40px;
+        height: 40px;
+    }
+
+    #nome{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    #escolha{
+        left: 142px;
+        top: 130px;
+        flex-wrap: wrap;
+        width: 210px;
+        height: 50px;
+    }
+
+    #cartão_princ{
+        width: 635px;
+    }
+
+    #cartão_princ button{
+        width: 120px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 350px;
+    }
+
+    #Fatura{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #fatura1{
+        font-size: 15px;
+    }
+
+    .cartoes{
+        width: 60px;
+    }
+
+    #limite{
+        display: none;
+    }
+
+    .titulos1{
+        margin-right: -870px;
+        font-size: 30px;
+        position: relative;
+    }
+
+    #titulo{
+        font-size: 20px;
+    }
+
+    #principal{
+        width: 250px;
+        height: 150px;
+        margin-left: 280px;
+    }
+
+
+    #txtBusca{
+        margin-left: -390px;
+        height: 40px;
+        width: 320px;
+    }
+
+
+    #background{
+        width: 400px;
+        height: 520px;
+        margin-left: 50px;
+        clear: left;
+    }
+
+    #anuncio{
+        display: none;
+    }
+
+    #anuncio h5{
+        font-size: 25px;
+    }
+
+    .lançamentos{
+        font-size: 12px;
+        width: 320px;
+        height: 50px;
+    }
+
+    .valor{
+        margin-left: 220px;
+    }
+
+    .paragrafo{
+        margin-right: 800px;
+    }
+
+    .estabele{
+        margin-top: -20px;
+    }
+
+    .redes-socias-home{
+        margin-right: 110px;
+    }
+
+    #sociais{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    #esconder, #imga, #esconder1, #imga1{
+        display: none;
+    }
+
+    #movimentaçao{
+        height: 800px;
+    }
+
+    .pix{
+        margin-top: 20px;
+    }
 
     
    }
