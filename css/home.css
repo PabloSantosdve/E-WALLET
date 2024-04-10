@@ -29,6 +29,10 @@ html{
     scroll-behavior: smooth; /* Esse atributo em css, faz com que a pagina rode mais lisa para os seus links*/
 }
 
+body {
+    overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 14px; /*width of the entire scrollbar*/
 }
