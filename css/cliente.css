@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 14px; /*width of the entire scrollbar*/
 }
