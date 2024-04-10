@@ -1097,8 +1097,48 @@ gap: 10px;
 }
 
 /*IPad Pro*/
-@media screen and (max-width: 1024px) and (min-height: 1368px) {
+@media screen and (max-width: 1024px) and (min-height: 1366px) {
     /* SEÇÃO PRINCIPAL HOME */
+
+    header {
+        justify-content: space-around;
+        height: 6vh;
+    }
+
+    header #logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header #logo img {
+        height: 50px;
+    }
+
+    header #logo h1 {
+        width: 200px;
+        height: auto;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    header #navegador_home {
+        width: 60%;
+        gap: 5%
+    }
+
+    header #navegador_home nav {
+        width: 100%;
+        gap: 2%;
+    }
+
+    header #navegador_home nav a {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+    }
+
     #Home_main-section {
         height: 40vh;
     }
@@ -1134,8 +1174,8 @@ gap: 10px;
     }
 
     #celular {
-        top: 82.5%;
-        left: 360px;
+        top: 79%;
+        left: 343px;
 
         width: auto;
         height: 380px;
@@ -1216,12 +1256,52 @@ gap: 10px;
 
 /*Surface Pro 7*/
 @media screen and (max-width: 912px) {
+
+    header {
+        justify-content: space-around;
+        height: 6vh;
+    }
+
+    header #logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header #logo img {
+        height: 50px;
+    }
+
+    header #logo h1 {
+        width: 200px;
+        height: auto;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    header #navegador_home {
+        width: 75%;
+        gap: 5%
+    }
+
+    header #navegador_home nav {
+        width: 100%;
+        gap: 2%;
+    }
+
+    header #navegador_home nav a {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+    }
+
     #Cartoes-section #cartao {
         margin: 0;
     }
 
     #celular {
-        left: 300px;
+        left: 340px;
     }
 
     #bank {
