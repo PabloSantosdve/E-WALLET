@@ -16,7 +16,7 @@
             <a id="logo" href=""></a>
             <div id="perfil">
                 <a id="nome" href="" class="paragrafo">Bem vinda, Leticia!</a>
-                <a href=""><img src="components/imagens/pagina-MeusCartoes/perfil.png" alt="foto de uma menina"></a>
+                <a href=""><img id="foto-perfil" src="components/imagens/pagina-MeusCartoes/perfil.png" alt="foto de uma menina"></a>
             </div>
         </nav>
 
@@ -44,7 +44,7 @@
     </header>
 
     <section id="movimentaçao">
-        <h1 class="titulos">Movimentações</h1>
+        <h1 class="titulos1">Movimentações</h1>
         <input type="pesquisa" id="txtBusca" placeholder="Buscar...">
         <div id="background">
             <h6 class="titulos">25 de março</h6>
@@ -117,29 +117,127 @@
             <img id="foto" src="components/imagens/pagina-MeusCartoes/foto_garota.png" alt="">
         </aside>
     </section>
+    
 
    
 
-    <section id="contas">
-        <h1>Contas em dia</h1>
-
-        <div class="contas1">
-            <p class="par">14/02 - Quarta-feira</p>
-            <div class="contas2">
-                <p class="rend" >RENDIMENTOPAY INSTITUICAO DE PAGAMENTO</p>
-                <p class="val" >R$ 243,75</p>
-                <p class="linha" >Não pagável</p>
+    <!--Carrossel-->
+    <section class="container-personagens">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carousel">
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto4.png" alt="Imagem" onclick="mostrarDiv(event)">
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>
             </div>
-        </div> 
-
-        <div class="contas1">
-            <p class="par">14/02 - Quarta-feira</p>
-            <div class="contas2">
-                <p class="rend" >RENDIMENTOPAY INSTITUICAO DE PAGAMENTO</p>
-                <p class="val" >R$ 243,75</p>
-                <p class="linha" >Não pagável</p>
+            
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto2.png" alt="Imagem" onclick="mostrarDiv(event)"  href="components/arquivo/boleto para deposito.pdf"  download>
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>
             </div>
-        </div> 
+            
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto5.png" alt="Imagem" onclick="mostrarDiv(event)">
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto2.png" alt="Imagem" onclick="mostrarDiv(event)">
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto6.png" alt="Imagem" onclick="mostrarDiv(event)">
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto5.png" alt="Imagem" onclick="mostrarDiv(event)">
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>                    
+            </div>
+            
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto6.png" alt="Imagem" onclick="mostrarDiv(event)">
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="components/imagens/pagina-MeusCartoes/cartoes/boleto2.png" alt="Imagem" onclick="mostrarDiv(event)">
+                <div class="hidden">
+                    <a class="link" href="components/arquivo/boleto para deposito.pdf"  download>Baixar boleto</a>
+                </div>
+            </div>
+            
+          
+            
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+
+
+        <div class="hidden">oioioioioioioi</div>
+        <script>
+            function mostrarDiv(event) {
+                var todasDivsOcultas = document.querySelectorAll('.hidden');
+                todasDivsOcultas.forEach(function(div) {
+                    div.classList.add('hidden');
+                });
+            
+                var divOculta = event.target.nextElementSibling;
+                if (divOculta.classList.contains("hidden")) {
+                    divOculta.classList.remove("hidden");
+                } else {
+                    divOculta.classList.add("hidden");
+                }
+            }
+            
+             
+            // JavaScript aqui
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            function nextSlide() {
+                currentIndex = Math.min(currentIndex + 1, totalSlides - 2); // Limita o índice ao número total de slides
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentIndex = Math.max(currentIndex - 1, 0); // Limita o índice mínimo a 0
+                updateCarousel();
+            }
+
+            function updateCarousel() {
+                slides.forEach((slide, index) => {
+                    slide.style.display = (index >= currentIndex && index < currentIndex + 4) ? 'block' : 'none'; // Exibe até 4 imagens por vez
+                });
+            }
+
+            updateCarousel(); // Para exibir apenas as primeiras imagens inicialmente
+        
+           
+            
+    
+        </script>
+
+
+     
+
+    </section>
+
+       
 
 
      

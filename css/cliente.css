@@ -282,47 +282,11 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 10px;
 }
 
-#contas{
-    width: auto;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#contas h1{
-    margin-left: 550px;
-    padding-bottom: 20px;
-}
-
-.contas1{
-    margin-left: 120px;
-}
 
 
-.contas2{
-    margin-top: 25px;
-    background-color: #EBEBEB;
-    width: 500px;
-    height: 150px;
-    border-radius: 16px;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-
-.rend{
-    margin-top: 10px;
-}
-
-.val{
-    margin-top: 10px;
-}
 
 
-.linha{
-    margin-top: 30px;
-    border-top: 1px black solid;
-    width: 420px;
-}
+
 
 
 footer {
@@ -355,5 +319,320 @@ footer {
         width: 30%;
         height: 70px;
     }
+
+    /* carrossel*/
+.container-personagens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: 350px;
+}
+
+/* Estilos do carrossel */
+.container {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    overflow: hidden;
+   
+}
+
+.carousel {
+    display: flex;
+    margin-bottom: -20px;
+    width: 1220px;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.slide img {
+    width: 310px;
+    height: 180px;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    transform: translateY(50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.next {
+    right: 0;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link{
+    width: 400px;
+    height: 200px;
+    margin-left: 95px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+/*RESPONSIVO*/
+
+@media only screen and (min-width: 1069px){
+    @media only screen and (max-width: 1280px)
+   {
+
+    #header{
+        margin-left: -140px;
+    }
+
+    #escolha{
+        margin-left: -180px;
+    }
+
+    #limite{
+        margin-left: 230px;
+    }
+
+    .titulos1{
+        margin-right: -330px;
+        font-size: 30px;
+        position: relative;
+    }
+
+    #txtBusca{
+        margin-left: -880px;
+    }
+
+    #background{
+        width: 500px;
+        height: 650px;
+    }
+
+    #anuncio{
+        width: 400px;
+        height: 600px;
+    }
+
+    #anuncio h5{
+        font-size: 25px;
+    }
+
+    .lançamentos{
+        font-size: 12px;
+        width: 400px;
+        height: 50px;
+    }
+
+    .valor{
+        margin-left: 200px;
+    }
+
+    .estabele{
+        margin-top: 0px;
+    }
+
+    
+   }
+}
+
+@media only screen and (min-width: 980px){
+    @media only screen and (max-width: 1068px)
+   {
+    #header{
+        margin-left: -140px;
+    }
+
+    #escolha{
+        margin-left: -180px;
+    }
+
+    #limite{
+        margin-left: 230px;
+    }
+
+    .titulos1{
+        margin-right: -330px;
+        font-size: 30px;
+        position: relative;
+    }
+
+    #txtBusca{
+        margin-left: -880px;
+    }
+
+    #background{
+        width: 500px;
+        height: 650px;
+    }
+
+    #anuncio{
+        width: 400px;
+        height: 600px;
+    }
+
+    #anuncio h5{
+        font-size: 25px;
+    }
+
+    .lançamentos{
+        font-size: 12px;
+        width: 400px;
+        height: 50px;
+    }
+
+    .valor{
+        margin-left: 200px;
+    }
+
+    .estabele{
+        margin-top: 0px;
+    }
+
+    
+   }
+}
+
+@media only screen and (min-width: 680px){
+    @media only screen and (max-width: 979px)
+   {
+
+    #header{
+        margin-left: -140px;
+    }
+
+    nav{
+        height: 70px;
+    }
+
+    #perfil img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #nome{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    #escolha{
+        margin-left: -360px;
+        top: 220px;
+    }
+
+    #cartão_princ button{
+        width: 220px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    #Fatura{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 00px;
+    }
+
+    #fatura1{
+        font-size: 15px;
+    }
+
+    .cartoes{
+        width: 60px;
+    }
+
+    #limite{
+        display: none;
+    }
+
+    .titulos1{
+        margin-right: -770px;
+        font-size: 30px;
+        position: relative;
+    }
+
+    #titulo{
+        font-size: 25px;
+    }
+
+    #principal{
+        width: 300px;
+        height: 200px;
+    }
+
+
+    #txtBusca{
+        margin-left: -480px;
+        height: 40px;
+        width: 320px;
+    }
+
+
+    #background{
+        width: 500px;
+        height: 650px;
+        margin-left: 120px;
+        clear: left;
+    }
+
+    #anuncio{
+        display: none;
+    }
+
+    #anuncio h5{
+        font-size: 25px;
+    }
+
+    .lançamentos{
+        font-size: 12px;
+        width: 400px;
+        height: 50px;
+    }
+
+    .valor{
+        margin-left: 200px;
+    }
+
+    .estabele{
+        margin-top: 0px;
+    }
+
+    
+   }
+}
+
+@media only screen and (min-width: 674px){
+    @media only screen and (max-width: 1069px)
+   {
+
+
+    
+   }
+}
+
 
 
