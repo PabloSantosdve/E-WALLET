@@ -191,6 +191,10 @@ h1, h2, h3, h4, h5, h6{
     margin-left: -955px;
 }
 
+.titulos{
+    margin-left: 100px;
+}
+
 #txtBusca{
     margin-left: 480px;
     margin-top: 15px;
@@ -790,6 +794,174 @@ footer {
 
     .paragrafo{
         margin-right: 800px;
+    }
+
+    .estabele{
+        margin-top: -20px;
+    }
+
+    .redes-socias-home{
+        margin-right: 110px;
+    }
+
+    #sociais{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    #esconder, #imga, #esconder1, #imga1{
+        display: none;
+    }
+
+    #movimentaçao{
+        height: 800px;
+    }
+
+    .pix{
+        margin-top: 20px;
+    }
+
+    
+   }
+}
+
+@media only screen and (min-width: 360px){
+    @media only screen and (max-width: 479px)
+   {
+
+    #header{
+        margin-left: -140px;
+    }
+
+    nav{
+        height: 50px;
+    }
+
+    #logo1{
+        width: 80px;
+        height: 40px;
+    }
+    
+    #logo{
+        display: flex;
+        text-decoration: none;
+    }
+    
+    #logo h1{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    #perfil img{
+        width: 40px;
+        height: 40px;
+    }
+
+    #nome{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+
+    #escolha{
+        left: 85px;
+        top: 130px;
+        flex-wrap: wrap;
+        width: 210px;
+        height: 50px;
+    }
+
+    .icone{
+        width: 25px;
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #cartão_princ{
+        width: 435px;
+    }
+
+    #cartão_princ button{
+        width: 120px;
+        height: 30px;
+        font-size: 20x;
+        margin-left: 350px;
+    }
+
+    #Fatura{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: -200px;
+    }
+
+    #fatura1{
+        font-size: 15px;
+        
+    }
+
+    .cartoes{
+        width: 60px;
+        margin-left: 10px;
+    }
+
+    #limite{
+        display: none;
+    }
+
+    .titulos1{
+        margin-right: -870px;
+        font-size: 30px;
+        position: relative;
+    }
+
+    #titulo{
+        font-size: 15px;
+    }
+
+    #principal{
+        width: 250px;
+        height: 150px;
+        margin-left: 220px;
+    }
+
+
+    #txtBusca{
+        margin-left: -290px;
+        height: 30px;
+        width: 200px;
+    }
+
+
+    #background{
+        width: 340px;
+        height: 520px;
+        margin-left: 10px;
+        clear: left;
+    }
+
+    #anuncio{
+        display: none;
+    }
+
+    #anuncio h5{
+        font-size: 25px;
+    }
+
+    .lançamentos{
+        font-size: 12px;
+        width: 260px;
+        height: 50px;
+    }
+
+    .valor{
+        margin-left: 180px;
+    }
+
+    .paragrafo{
+        padding-left: -500px;
     }
 
     .estabele{
