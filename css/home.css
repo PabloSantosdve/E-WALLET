@@ -1595,7 +1595,265 @@ gap: 10px;
 
 /* IPhone 14 Pro Max */
 @media screen and (max-width: 430px) {
+    header {
+        justify-content: space-between;
+        height: 4vh;
+    }
 
+    header #logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header #logo img {
+        height: 35px;
+    }
+
+    header #logo h1 {
+        width: 120px;
+        height: auto;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    header #navegador_home {
+        width: 100%;
+        gap: 70px;
+    }
+
+    header #navegador_home nav {
+        width: 100%;
+        gap: 20%;
+    }
+
+    header #navegador_home nav a {
+        width: auto;
+        height: auto;
+        font-size: 8px;
+    }
+
+    header #navegador_home button {
+        width: 80px;
+        height: 20px;
+        padding: 3px 6px;
+        font-size: 8px;
+    }
+
+    #Home_main-section {
+        height: 20vh;
+    }
+
+    #Home_main-section #conteudo-main {
+        width: 45%;
+        height: 50%;
+    }
+
+    #Home_main-section #conteudo-main h1{
+        margin-top: 40px;
+        font-size: 0.5rem;
+    }
+
+    #Home_main-section #conteudo-main  button {
+        width: 80px;
+        height: 15px;
+        padding: 5px 10px;
+        font-size: 7px;
+    }
+    
+    
+
+    #Cartoes-section {
+        height: 20vh;
+    }
+
+    #Cartoes-section img {
+        width: 120px;
+    }
+
+    #Cartoes-section .content-box .titulos {
+        font-size: 16px;
+    }
+    
+    #Cartoes-section .content-box .paragrafo {
+        width: 100%;
+        font-size: 8px;
+    }
+
+    #section-beneficios {
+        height: 45vh;
+        margin-top: 20px;
+    }
+
+    #section-beneficios h1 {
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+   .titulos {
+    font-size: 20px;
+   }
+
+    #section-beneficios .container {
+        margin-top: 50px;
+    }
+
+    #celular {
+        top: 47.5%;
+        left: 135px;
+
+        width: auto;
+        height: 210px;
+    }
+
+    #notebook {
+        margin-top: 6px;
+        left: 115px;
+
+        width: auto;
+        height: 110px;
+    }
+
+    #bank {
+        width: auto;
+        height: 130px;
+    }
+
+    #section-beneficios .container #caixa1 {
+        width: 200px;
+        height: 150px;
+    }
+
+    #section-beneficios #caixa1 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        width: 65%;
+        font-size: 8px;
+    }
+
+    #section-beneficios .container #caixa2 {
+        width: 200px;
+        height: 95px;
+        padding: 0;
+    }
+
+    #section-beneficios .container #caixa2.box {
+        padding: 10px;
+    }
+
+    #section-beneficios .container #caixa2 ul {
+        gap: 8px;
+
+        width: 100%;
+
+    }
+
+    #section-beneficios .container #caixa2 ul li {
+        width: 100%;
+        font-size: 8px;
+    }
+    
+
+    #section-beneficios button {
+        width: 100px;
+        padding: 5px 10px;
+        
+        color: white;
+        font-size: 10px;
+        
+        border: none;
+        border-radius: 15px;
+        background-color: #02AB2F;
+        box-shadow: 1px 1px 4px #baeabf;
+    }
+
+    #conheca_nossos_planos_section {
+        height: auto;
+    }
+
+    #conheca_nossos_planos_section .titulos {
+        margin-top: 20px;
+    }
+
+    #conheca_nossos_planos_section .planos {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #conheca_nossos_planos_section .planos > div {
+        width: 45%;
+    }
+
+    #conheca_nossos_planos_section .planos .plano-titulo {
+        font-size: 20px;
+        height: auto;
+    }
+
+    #conheca_nossos_planos_section .planos .plano-titulo h3 {
+        margin: 10px 0;
+    }
+
+    #conheca_nossos_planos_section .planos .conteudo-plano span {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    #conheca_nossos_planos_section .planos .conteudo-plano ul li {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    #conheca_nossos_planos_section .planos .conteudo-plano ul li img {
+        width: 10px;
+    }
+
+    #conheca_nossos_planos_section .planos .conteudo-plano .button-acessar {
+        width: 100%;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    #Entre_em_contato-section {
+        margin-top: 30px;
+        height: auto;
+    }
+
+    #Entre_em_contato-section .titulos {
+        font-size: 25px;
+    }
+
+    #Entre_em_contato-section #formulario .caixa-item-form {
+        height: auto;
+    }
+
+    #sobre_nos_section {
+        height: auto;
+    }
+
+    #sobre_nos_section .foto {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #sobre_nos_section .foto a {
+        width: 45%;
+        height: 250px;
+    }
+
+    #sobre_nos_section .foto a .flip-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    #footer-home .redes-socias-home {
+        width: auto;
+    }
 }
 
 /* IPhone XR */
