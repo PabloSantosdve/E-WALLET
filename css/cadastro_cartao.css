@@ -29,7 +29,7 @@ section h1{
 #cadastro_cartao{
     margin: auto;
     height: 550px;
-    width: 60%;
+    width: 55%;
 
     margin: auto;
     margin-top: 85px;
@@ -127,7 +127,7 @@ a:hover{
     
     width: 24%;
     height: 250px;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-top: 115px;
 }
 
@@ -141,7 +141,7 @@ a:hover{
     height: 150px;
     position: absolute;
     z-index: 3;
-    top: 350px;
+    top: 320px;
     left: 950px;
     
 }

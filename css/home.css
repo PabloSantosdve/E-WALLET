@@ -354,6 +354,10 @@ main {
     list-style: none;
     text-align: right;
 }
+
+#section-beneficios .container a button{
+    cursor: pointer;
+}
 .botao_acessar{
     width: 100%;
 }

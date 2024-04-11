@@ -294,7 +294,10 @@ aside .container-btn .btn-autenticacao span{
 	width: 30%;
 	height: 50%;
 	border-radius: 10px;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -310,7 +313,7 @@ aside .container-btn .btn-autenticacao span{
 }
 
 .modal_cadastro h2{
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 	font-family: 'titulo', Arial, Helvetica, sans-serif;
 }
@@ -325,7 +328,7 @@ aside .container-btn .btn-autenticacao span{
 
 #link_modal{
 	background-color: #26B71A;
-	width: 50%;
+	width: 100%;
 	text-align: center;
 	padding: 20px;
 	margin: auto;
