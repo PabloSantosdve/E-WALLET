@@ -43,3 +43,11 @@ sr.reveal("#button", {
     origin: "bottom",
     duration: 1400
   })
+
+function abrirModal(){
+  let modal = document.querySelector(".modal_cadastro")
+  let janela = document.querySelector(".tela_escura")
+  
+  janela.style.visibility="visible";
+  modal.style.visibility="visible";
+}
