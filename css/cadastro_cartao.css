@@ -29,7 +29,7 @@ section h1{
 #cadastro_cartao{
     margin: auto;
     height: 550px;
-    width: 60%;
+    width: 55%;
 
     margin: auto;
     margin-top: 85px;
@@ -92,8 +92,8 @@ form{
 }
 
 /*Botão*/
-button{
-    width: 30%;
+a{
+    width: 40%;
     height: 45px;
     background-color: rgb(35, 51, 39);
     color: white;
@@ -103,19 +103,20 @@ button{
 
     transition: all 0.4s;
     
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'paragrafos', Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-button:hover{
+a:hover{
     background-color: rgb(53, 255, 104);
     color: rgb(0, 0, 0);
    
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.438);
 }
-button {
-    font-size: 20px;
-    font-family: 'paragrafos', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
+
 /*imagens*/
 
 #frente_do_cartao{
@@ -126,7 +127,7 @@ button {
     
     width: 24%;
     height: 250px;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-top: 115px;
 }
 
@@ -140,7 +141,7 @@ button {
     height: 150px;
     position: absolute;
     z-index: 3;
-    top: 350px;
+    top: 320px;
     left: 950px;
     
 }

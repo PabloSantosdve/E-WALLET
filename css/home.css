@@ -126,15 +126,13 @@ header button:hover{
     gap: 10%;
 }
 header nav{
-    
     height: 60px;
     width: 750px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 header nav a {
-   
     text-decoration: none;
     height: 40px;
     width: 200px;
@@ -355,6 +353,13 @@ main {
     font-size: 25px;
     list-style: none;
     text-align: right;
+}
+
+#section-beneficios .container a button{
+    cursor: pointer;
+}
+.botao_acessar{
+    width: 100%;
 }
 
 /*ESTILIZANDO OS BOTÕES DAS SECTIONS*/

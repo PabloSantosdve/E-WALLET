@@ -61,7 +61,7 @@ button {
 
 /*CAIXA DA IMAGEM - LADO ESQUERDO*/
 main article {
-	width: 50%;
+	width: 50%; 
 	
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
@@ -193,7 +193,7 @@ aside form .campo-input input:not(:placeholder-shown) + label {
     color: #27b71a;
 }
 
-aside form a {
+#botao_cadastro {
 	width: 100%;
 	padding: 10px 20px;
 	margin: 0 auto 10px auto;
@@ -206,8 +206,16 @@ aside form a {
 	border: none;
 	border-radius: 10px;
 	background-color: #26B71A;
+	transition: all 0.5s;
 }
 
+#botao_cadastro:hover{
+	cursor: pointer;
+	background-color: black;
+	color: white;
+
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.616);
+}
 /* CONFIG. DIVISÓRIA */
 aside #linha-divisoria {
 	display: flex;
@@ -269,6 +277,79 @@ aside .container-btn .btn-autenticacao span{
 	margin-right: 10%;
 }
 
+
+.tela_escura{
+	position: absolute;
+	top: 0;/* O topp e o left em 0 faz com que a div tome a tela toda*/
+	left: 0; 
+	width: 100%;
+	height: 100%;
+	background-color: rgba(51, 51, 51, 0.8);
+
+	visibility: hidden;
+
+}
+.modal_cadastro{
+	background-color: white;
+	width: 30%;
+	height: 50%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	text-align: center;
+	
+	visibility: hidden;
+
+	animation-name: abrir_modal;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+.modal_cadastro h2{
+	font-size: 30px;
+	text-align: center;
+	font-family: 'titulo', Arial, Helvetica, sans-serif;
+}
+
+.modal_cadastro a{
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	font-family: 'titulo', Arial, Helvetica, sans-serif;
+	
+}
+
+#link_modal{
+	background-color: #26B71A;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+	margin-top: 20px;
+
+
+}
+
+@keyframes abrir_modal{
+	from{
+		opacity: 0.0;/*Totalmente transaparente*/
+		width: 0px;
+		height: 0px;
+	}
+
+	to{
+		opacity: 1.0;/*Totalmente solido*/
+		width: 30%;
+		height: 50%;
+	}
+}
 
 /* CONFIGURAÇÃO PARA TELAS COM BASE NA LARGURA DELAS */
 @media screen and (max-width: 1173px) {
