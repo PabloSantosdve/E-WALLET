@@ -4,7 +4,7 @@ function exibirCartoes()
 
     todosCartoes.forEach(function(cartao) {
         cartao.style.display = "block"
-    });
+    }); 
 }
 
 function moverCartao(id)
